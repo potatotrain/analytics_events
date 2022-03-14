@@ -1,3 +1,162 @@
 {
-
+  "APP_STARTED": {
+    "key": "app_started",
+    "id": "community id",
+    "props": {},
+    "description": "This event is fired when the app starts"
+  },
+  "FOLLOWED": {
+    "key": "followed",
+    "id": "user id",
+    "props": {
+      "verified": "boolean reflecting if the target user is verified"
+    },
+    "description": "This event is fired when a user is followed"
+  },
+  "UNFOLLOWED": {
+    "key": "unfollowed",
+    "id": "user id",
+    "props": {
+      "verified": "boolean reflecting if the target user is verified"
+    },
+    "description": "This event is fired when a user is unfollowed"
+  },
+  "ADDED_USER_SUBSCRIPTION": {
+    "key": "add_user_subscription",
+    "id": "user id",
+    "props": {
+      "verified": "boolean reflecting if the target user is verified"
+    },
+    "description": "This event is fired when a user has been subscribed to"
+  },
+  "REMOVED_USER_SUBSCRIPTION": {
+    "key": "remove_user_subscription",
+    "id": "user id",
+    "props": {
+      "verified": "boolean reflecting if the target user is verified"
+    },
+    "description": "This event is fired when a user has been unsubscribed from"
+  },
+  "LIKED": {
+    "key": "liked",
+    "id": "post id",
+    "props": {
+      "post_type": "the post type",
+      "ancestry_depth": "the post ancestry",
+      "sponsored": "boolean reflecting if the post is sponsored",
+      "featured": "boolean reflecting if the post is featured",
+      "parent_id": "the posts parent id (only present if parent post is not nil)"
+    },
+    "description": "This event is fired when a user has liked a post"
+  },
+  "UNLIKED": {
+    "key": "unliked",
+    "id": "post id",
+    "props": {
+      "post_type": "the post type",
+      "ancestry_depth": "the post ancestry",
+      "sponsored": "boolean reflecting if the post is sponsored",
+      "featured": "boolean reflecting if the post is featured",
+      "parent_id": "the posts parent id (only present if parent post is not nil)"
+    },
+    "description": "This event is fired when a user has unliked a post"
+  },
+  "POST_FLAGGED": {
+    "key": "post_flagged",
+    "id": "post id",
+    "props": {
+      "post_type": "the post type",
+      "ancestry_depth": "the post ancestry",
+      "sponsored": "boolean reflecting if the post is sponsored",
+      "featured": "boolean reflecting if the post is featured",
+      "parent_id": "the posts parent id (only present if parent post is not nil)"
+    },
+    "description": "This event is fired when a user has flagged a post"
+  },
+  "POST_CREATED": {
+    "key": "post_created",
+    "id": "post id",
+    "props": {
+      "post_type": "the post type",
+      "ancestry_depth": "the post ancestry",
+      "sponsored": "boolean reflecting if the post is sponsored",
+      "featured": "boolean reflecting if the post is featured",
+      "parent_id": "the posts parent id (only present if parent post is not nil)"
+    },
+    "description": "This event is fired when a user creates a post"
+  },
+  "POST_DELETED": {
+    "key": "post_deleted",
+    "id": "post id",
+    "props": {
+      "post_type": "the post type",
+      "ancestry_depth": "the post ancestry",
+      "sponsored": "boolean reflecting if the post is sponsored",
+      "featured": "boolean reflecting if the post is featured",
+      "parent_id": "the posts parent id (only present if parent post is not nil)"
+    },
+    "description": "This event is fired when a user deletes a post"
+  },
+  "GROUP_JOIN": {
+    "key": "group_join",
+    "id": "group id",
+    "props": {
+      "group_id": "the group id",
+      "group_join_request": "the state of the group join request (approved, pending, denied)"
+    },
+    "description": "This event is fired the user has applied to join a group"
+  },
+  "GROUP_LEAVE": {
+    "key": "group_leave",
+    "id": "group id",
+    "props": {
+      "group_id": "the group id",
+    },
+    "description": "This event is fired when a user leaves a group"
+  },
+  "CHAT_ENTER": {
+    "key": "chat_enter",
+    "id": "chat id",
+    "props": {
+      "chat_id": "the chat id",
+      "chat_type": "the chat type",
+    },
+    "description": "This event is fired when a user enters the presence channel="
+  },
+  "CHAT_LEAVE": {
+    "key": "chat_leave",
+    "id": "chat id",
+    "props": {
+      "chat_id": "the chat id",
+      "chat_type": "the chat type",
+    },
+    "description": "This event is fired when a user leaves the presence channel="
+  },
+  "CHAT_MESSAGE_CREATE": {
+    "key": "create_chat_message",
+    "id": "chat id",
+    "props": {
+      "chat_id": "the chat id",
+      "chat_type": "the chat type",
+    },
+    "description": "This event is fired when a user creates a chat"
+  },
+  "CHAT_REPORT": {
+    "key": "report_chat_message",
+    "id": "chat id",
+    "props": {
+      "chat_id": "the chat id",
+      "chat_type": "the chat type",
+    },
+    "description": "This event is fired when a user reports a chat"
+  },
+  "REACTION_CREATED": {
+    "key": "reaction_created",
+    "id": "post id",
+    "props": {
+      "post_id": "the post id",
+      "reaction_icon_id": "the reaction icon id",
+    },
+    "description": "This event is fired when a user creates a reaction"
+  }
 }
