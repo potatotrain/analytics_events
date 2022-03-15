@@ -97,7 +97,7 @@
     },
     "description": "This event is fired when a user deletes a post"
   },
-  "GROUP_JOIN": {
+  "GROUP_JOINED": {
     "key": "group_join",
     "id": "group id",
     "props": {
@@ -106,7 +106,7 @@
     },
     "description": "This event is fired the user has applied to join a group"
   },
-  "GROUP_LEAVE": {
+  "GROUP_LEFT": {
     "key": "group_leave",
     "id": "group id",
     "props": {
@@ -114,7 +114,7 @@
     },
     "description": "This event is fired when a user leaves a group"
   },
-  "CHAT_ENTER": {
+  "CHAT_ENTERED": {
     "key": "chat_enter",
     "id": "chat id",
     "props": {
@@ -123,7 +123,7 @@
     },
     "description": "This event is fired when a user enters the presence channel="
   },
-  "CHAT_LEAVE": {
+  "CHAT_LEFT": {
     "key": "chat_leave",
     "id": "chat id",
     "props": {
@@ -132,7 +132,7 @@
     },
     "description": "This event is fired when a user leaves the presence channel="
   },
-  "CHAT_MESSAGE_CREATE": {
+  "CHAT_MESSAGE_CREATED": {
     "key": "create_chat_message",
     "id": "chat id",
     "props": {
@@ -141,7 +141,7 @@
     },
     "description": "This event is fired when a user creates a chat"
   },
-  "CHAT_REPORT": {
+  "CHAT_REPORTED": {
     "key": "report_chat_message",
     "id": "chat id",
     "props": {
