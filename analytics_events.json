@@ -5,40 +5,40 @@
     "props": {},
     "description": "This event is fired when the app starts"
   },
-  "FOLLOWED": {
-    "key": "followed",
+  "FOLLOW_CREATED": {
+    "key": "follow_created",
     "id": "user id",
     "props": {
       "verified": "boolean reflecting if the target user is verified"
     },
     "description": "This event is fired when a user is followed"
   },
-  "UNFOLLOWED": {
-    "key": "unfollowed",
+  "FOLLOW_DESTROYED": {
+    "key": "follow_destroyed",
     "id": "user id",
     "props": {
       "verified": "boolean reflecting if the target user is verified"
     },
     "description": "This event is fired when a user is unfollowed"
   },
-  "ADDED_USER_SUBSCRIPTION": {
-    "key": "add_user_subscription",
+  "USER_SUBSCRIPTION_CREATED": {
+    "key": "user_subscription_created",
     "id": "user id",
     "props": {
       "verified": "boolean reflecting if the target user is verified"
     },
     "description": "This event is fired when a user has been subscribed to"
   },
-  "REMOVED_USER_SUBSCRIPTION": {
-    "key": "remove_user_subscription",
+  "USER_SUBSCRIPTION_DESTROYED": {
+    "key": "user_subscription_destroyed",
     "id": "user id",
     "props": {
       "verified": "boolean reflecting if the target user is verified"
     },
     "description": "This event is fired when a user has been unsubscribed from"
   },
-  "LIKED": {
-    "key": "liked",
+  "LIKE_CREATED": {
+    "key": "like_created",
     "id": "post id",
     "props": {
       "post_type": "the post type",
@@ -49,8 +49,8 @@
     },
     "description": "This event is fired when a user has liked a post"
   },
-  "UNLIKED": {
-    "key": "unliked",
+  "LIKE_DESTROYED": {
+    "key": "like_destroyed",
     "id": "post id",
     "props": {
       "post_type": "the post type",
@@ -97,8 +97,32 @@
     },
     "description": "This event is fired when a user deletes a post"
   },
-  "GROUP_JOIN": {
-    "key": "group_join",
+  "POST_RESPONSE_CREATED": {
+    "key": "post_response_created",
+    "id": "post id",
+    "props": {
+      "post_type": "the post type",
+      "ancestry_depth": "the post ancestry",
+      "sponsored": "boolean reflecting if the post is sponsored",
+      "featured": "boolean reflecting if the post is featured",
+      "parent_id": "the posts parent id"
+    },
+    "description": "This event is fired when a user creates a comment or reply"
+  },
+  "POST_RESPONSE_DELETED": {
+    "key": "post_response_deleted",
+    "id": "post id",
+    "props": {
+      "post_type": "the post type",
+      "ancestry_depth": "the post ancestry",
+      "sponsored": "boolean reflecting if the post is sponsored",
+      "featured": "boolean reflecting if the post is featured",
+      "parent_id": "the posts parent id"
+    },
+    "description": "This event is fired when a user deletes a comment or reply"
+  },
+  "GROUP_JOINED": {
+    "key": "group_joined",
     "id": "group id",
     "props": {
       "group_id": "the group id",
@@ -106,16 +130,16 @@
     },
     "description": "This event is fired the user has applied to join a group"
   },
-  "GROUP_LEAVE": {
-    "key": "group_leave",
+  "GROUP_LEFT": {
+    "key": "group_left",
     "id": "group id",
     "props": {
       "group_id": "the group id",
     },
     "description": "This event is fired when a user leaves a group"
   },
-  "CHAT_ENTER": {
-    "key": "chat_enter",
+  "CHAT_ENTERED": {
+    "key": "chat_entered",
     "id": "chat id",
     "props": {
       "chat_id": "the chat id",
@@ -123,8 +147,8 @@
     },
     "description": "This event is fired when a user enters the presence channel="
   },
-  "CHAT_LEAVE": {
-    "key": "chat_leave",
+  "CHAT_LEFT": {
+    "key": "chat_left",
     "id": "chat id",
     "props": {
       "chat_id": "the chat id",
@@ -132,8 +156,8 @@
     },
     "description": "This event is fired when a user leaves the presence channel="
   },
-  "CHAT_MESSAGE_CREATE": {
-    "key": "create_chat_message",
+  "CHAT_MESSAGE_CREATED": {
+    "key": "chat_message_created",
     "id": "chat id",
     "props": {
       "chat_id": "the chat id",
@@ -141,8 +165,8 @@
     },
     "description": "This event is fired when a user creates a chat"
   },
-  "CHAT_REPORT": {
-    "key": "report_chat_message",
+  "CHAT_MESSAGE_REPORTED": {
+    "key": "chat_message_reported",
     "id": "chat id",
     "props": {
       "chat_id": "the chat id",
