@@ -7,16 +7,18 @@
   },
   "FOLLOW_CREATED": {
     "key": "follow_created",
-    "id": "user id",
+    "id": "follow id",
     "props": {
+      "user_id": "the user id who was followed",
       "verified": "boolean reflecting if the target user is verified"
     },
     "description": "This event is fired when a user is followed"
   },
   "FOLLOW_DESTROYED": {
     "key": "follow_destroyed",
-    "id": "user id",
+    "id": "follow id",
     "props": {
+      "user_id": "the user id who was followed",
       "verified": "boolean reflecting if the target user is verified"
     },
     "description": "This event is fired when a user is unfollowed"
@@ -39,25 +41,27 @@
   },
   "LIKE_CREATED": {
     "key": "like_created",
-    "id": "post id",
+    "id": "like id",
     "props": {
+      "post_id": "the post id to which the like belongs to",
       "post_type": "the post type",
       "ancestry_depth": "the post ancestry",
       "sponsored": "boolean reflecting if the post is sponsored",
       "featured": "boolean reflecting if the post is featured",
-      "parent_id": "the posts parent id (only present if parent post is not nil)"
+      "parent_id": "the parent id of the post to which the like belongs to (omitted if post is root)"
     },
     "description": "This event is fired when a user has liked a post"
   },
   "LIKE_DESTROYED": {
     "key": "like_destroyed",
-    "id": "post id",
+    "id": "like id",
     "props": {
+      "post_id": "the post id to which the like belongs to",
       "post_type": "the post type",
       "ancestry_depth": "the post ancestry",
       "sponsored": "boolean reflecting if the post is sponsored",
       "featured": "boolean reflecting if the post is featured",
-      "parent_id": "the posts parent id (only present if parent post is not nil)"
+      "parent_id": "the parent id of the post to which the like belongs to (omitted if post is root)"
     },
     "description": "This event is fired when a user has unliked a post"
   },
@@ -65,11 +69,12 @@
     "key": "post_flagged",
     "id": "post id",
     "props": {
+      "post_id": "the post id",
       "post_type": "the post type",
       "ancestry_depth": "the post ancestry",
       "sponsored": "boolean reflecting if the post is sponsored",
       "featured": "boolean reflecting if the post is featured",
-      "parent_id": "the posts parent id (only present if parent post is not nil)"
+      "parent_id": "the parent id of the post to which the like belongs to (omitted if post is root)"
     },
     "description": "This event is fired when a user has flagged a post"
   },
@@ -77,11 +82,12 @@
     "key": "post_created",
     "id": "post id",
     "props": {
+      "post_id": "the post id",
       "post_type": "the post type",
       "ancestry_depth": "the post ancestry",
       "sponsored": "boolean reflecting if the post is sponsored",
       "featured": "boolean reflecting if the post is featured",
-      "parent_id": "the posts parent id (only present if parent post is not nil)"
+      "parent_id": "the parent id of the post to which the like belongs to (omitted if post is root)"
     },
     "description": "This event is fired when a user creates a post"
   },
@@ -89,11 +95,12 @@
     "key": "post_deleted",
     "id": "post id",
     "props": {
+      "post_id": "the post id",
       "post_type": "the post type",
       "ancestry_depth": "the post ancestry",
       "sponsored": "boolean reflecting if the post is sponsored",
       "featured": "boolean reflecting if the post is featured",
-      "parent_id": "the posts parent id (only present if parent post is not nil)"
+      "parent_id": "the parent id of the post to which the like belongs to (omitted if post is root)"
     },
     "description": "This event is fired when a user deletes a post"
   },
@@ -101,6 +108,7 @@
     "key": "post_response_created",
     "id": "post id",
     "props": {
+      "post_id": "the post id",
       "post_type": "the post type",
       "ancestry_depth": "the post ancestry",
       "sponsored": "boolean reflecting if the post is sponsored",
@@ -113,6 +121,7 @@
     "key": "post_response_deleted",
     "id": "post id",
     "props": {
+      "post_id": "the post id",
       "post_type": "the post type",
       "ancestry_depth": "the post ancestry",
       "sponsored": "boolean reflecting if the post is sponsored",
@@ -158,7 +167,7 @@
   },
   "CHAT_MESSAGE_CREATED": {
     "key": "chat_message_created",
-    "id": "chat id",
+    "id": "chat message id",
     "props": {
       "chat_id": "the chat id",
       "chat_type": "the chat type",
@@ -167,7 +176,7 @@
   },
   "CHAT_MESSAGE_REPORTED": {
     "key": "chat_message_reported",
-    "id": "chat id",
+    "id": "chat message id",
     "props": {
       "chat_id": "the chat id",
       "chat_type": "the chat type",
@@ -176,7 +185,7 @@
   },
   "REACTION_CREATED": {
     "key": "reaction_created",
-    "id": "post id",
+    "id": "reaction id",
     "props": {
       "post_id": "the post id",
       "reaction_icon_id": "the reaction icon id",
