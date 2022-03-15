@@ -9,8 +9,8 @@
     "key": "follow_created",
     "id": "follow id",
     "props": {
-      "user_id": "the user id who was followed",
-      "verified": "boolean reflecting if the target user is verified"
+      "user:id": "the user id who was followed",
+      "user:verified": "boolean reflecting if the target user is verified"
     },
     "description": "This event is fired when a user is followed"
   },
@@ -18,8 +18,8 @@
     "key": "follow_destroyed",
     "id": "follow id",
     "props": {
-      "user_id": "the user id who was followed",
-      "verified": "boolean reflecting if the target user is verified"
+      "user:id": "the user id who was followed",
+      "user:verified": "boolean reflecting if the target user is verified"
     },
     "description": "This event is fired when a user is unfollowed"
   },
@@ -27,7 +27,8 @@
     "key": "user_subscription_created",
     "id": "user id",
     "props": {
-      "verified": "boolean reflecting if the target user is verified"
+      "user:id": "the user id of who was subscribed to",
+      "user:verified": "boolean reflecting if the target user is verified"
     },
     "description": "This event is fired when a user has been subscribed to"
   },
@@ -35,7 +36,8 @@
     "key": "user_subscription_destroyed",
     "id": "user id",
     "props": {
-      "verified": "boolean reflecting if the target user is verified"
+      "user:id": "the user id of who was unsubscribed from",
+      "user:verified": "boolean reflecting if the target user is verified"
     },
     "description": "This event is fired when a user has been unsubscribed from"
   },
@@ -43,12 +45,13 @@
     "key": "like_created",
     "id": "like id",
     "props": {
-      "post_id": "the post id to which the like belongs to",
-      "post_type": "the post type",
-      "ancestry_depth": "the post ancestry",
-      "sponsored": "boolean reflecting if the post is sponsored",
-      "featured": "boolean reflecting if the post is featured",
-      "parent_id": "the parent id of the post to which the like belongs to (omitted if post is root)"
+      "post:id": "the post id to which the like belongs to",
+      "post:post_type": "the post type",
+      "post:user_id": "the user id of the posts owner",
+      "post:ancestry_depth": "the post ancestry",
+      "post:sponsored": "boolean reflecting if the post is sponsored",
+      "post:featured": "boolean reflecting if the post is featured",
+      "post:parent_id": "the parent id of the post to which the like belongs to (omitted if post is root)"
     },
     "description": "This event is fired when a user has liked a post"
   },
@@ -56,12 +59,13 @@
     "key": "like_destroyed",
     "id": "like id",
     "props": {
-      "post_id": "the post id to which the like belongs to",
-      "post_type": "the post type",
-      "ancestry_depth": "the post ancestry",
-      "sponsored": "boolean reflecting if the post is sponsored",
-      "featured": "boolean reflecting if the post is featured",
-      "parent_id": "the parent id of the post to which the like belongs to (omitted if post is root)"
+      "post:id": "the post id to which the like belongs to",
+      "post:post_type": "the post type",
+      "post:user_id": "the user id of the posts owner",
+      "post:ancestry_depth": "the post ancestry",
+      "post:sponsored": "boolean reflecting if the post is sponsored",
+      "post:featured": "boolean reflecting if the post is featured",
+      "post:parent_id": "the parent id of the post to which the like belongs to (omitted if post is root)"
     },
     "description": "This event is fired when a user has unliked a post"
   },
@@ -69,12 +73,13 @@
     "key": "post_flagged",
     "id": "post id",
     "props": {
-      "post_id": "the post id",
-      "post_type": "the post type",
-      "ancestry_depth": "the post ancestry",
-      "sponsored": "boolean reflecting if the post is sponsored",
-      "featured": "boolean reflecting if the post is featured",
-      "parent_id": "the parent id of the post to which the like belongs to (omitted if post is root)"
+      "post:id": "the post id",
+      "post:post_type": "the post type",
+      "post:user_id": "the user id of the posts owner",
+      "post:ancestry_depth": "the post ancestry",
+      "post:sponsored": "boolean reflecting if the post is sponsored",
+      "post:featured": "boolean reflecting if the post is featured",
+      "post:parent_id": "the parent id of the post to which the like belongs to (omitted if post is root)"
     },
     "description": "This event is fired when a user has flagged a post"
   },
@@ -82,12 +87,13 @@
     "key": "post_created",
     "id": "post id",
     "props": {
-      "post_id": "the post id",
-      "post_type": "the post type",
-      "ancestry_depth": "the post ancestry",
-      "sponsored": "boolean reflecting if the post is sponsored",
-      "featured": "boolean reflecting if the post is featured",
-      "parent_id": "the parent id of the post to which the like belongs to (omitted if post is root)"
+      "post:id": "the post id",
+      "post:post_type": "the post type",
+      "post:user_id": "the user id of the posts owner",
+      "post:ancestry_depth": "the post ancestry",
+      "post:sponsored": "boolean reflecting if the post is sponsored",
+      "post:featured": "boolean reflecting if the post is featured",
+      "post:parent_id": "the parent id of the post to which the like belongs to (omitted if post is root)"
     },
     "description": "This event is fired when a user creates a post"
   },
@@ -95,47 +101,22 @@
     "key": "post_deleted",
     "id": "post id",
     "props": {
-      "post_id": "the post id",
-      "post_type": "the post type",
-      "ancestry_depth": "the post ancestry",
-      "sponsored": "boolean reflecting if the post is sponsored",
-      "featured": "boolean reflecting if the post is featured",
-      "parent_id": "the parent id of the post to which the like belongs to (omitted if post is root)"
+      "post:id": "the post id",
+      "post:post_type": "the post type",
+      "post:user_id": "the user id of the posts owner",
+      "post:ancestry_depth": "the post ancestry",
+      "post:sponsored": "boolean reflecting if the post is sponsored",
+      "post:featured": "boolean reflecting if the post is featured",
+      "post:parent_id": "the parent id of the post to which the like belongs to (omitted if post is root)"
     },
     "description": "This event is fired when a user deletes a post"
-  },
-  "POST_RESPONSE_CREATED": {
-    "key": "post_response_created",
-    "id": "post id",
-    "props": {
-      "post_id": "the post id",
-      "post_type": "the post type",
-      "ancestry_depth": "the post ancestry",
-      "sponsored": "boolean reflecting if the post is sponsored",
-      "featured": "boolean reflecting if the post is featured",
-      "parent_id": "the posts parent id"
-    },
-    "description": "This event is fired when a user creates a comment or reply"
-  },
-  "POST_RESPONSE_DELETED": {
-    "key": "post_response_deleted",
-    "id": "post id",
-    "props": {
-      "post_id": "the post id",
-      "post_type": "the post type",
-      "ancestry_depth": "the post ancestry",
-      "sponsored": "boolean reflecting if the post is sponsored",
-      "featured": "boolean reflecting if the post is featured",
-      "parent_id": "the posts parent id"
-    },
-    "description": "This event is fired when a user deletes a comment or reply"
   },
   "GROUP_JOINED": {
     "key": "group_joined",
     "id": "group id",
     "props": {
-      "group_id": "the group id",
-      "group_join_request": "the state of the group join request (approved, pending, denied)"
+      "group:id": "the group id",
+      "group_join_request:state": "the state of the group join request (approved, pending, denied)"
     },
     "description": "This event is fired the user has applied to join a group"
   },
@@ -143,7 +124,7 @@
     "key": "group_left",
     "id": "group id",
     "props": {
-      "group_id": "the group id",
+      "group:id": "the group id",
     },
     "description": "This event is fired when a user leaves a group"
   },
@@ -151,8 +132,8 @@
     "key": "chat_entered",
     "id": "chat id",
     "props": {
-      "chat_id": "the chat id",
-      "chat_type": "the chat type",
+      "chat:id": "the chat id",
+      "chat:type": "the chat type",
     },
     "description": "This event is fired when a user enters the presence channel"
   },
@@ -160,8 +141,8 @@
     "key": "chat_left",
     "id": "chat id",
     "props": {
-      "chat_id": "the chat id",
-      "chat_type": "the chat type",
+      "chat:id": "the chat id",
+      "chat:type": "the chat type",
     },
     "description": "This event is fired when a user leaves the presence channel"
   },
@@ -169,8 +150,8 @@
     "key": "chat_message_created",
     "id": "chat message id",
     "props": {
-      "chat_id": "the chat id",
-      "chat_type": "the chat type",
+      "chat:id": "the chat id",
+      "chat:type": "the chat type",
     },
     "description": "This event is fired when a user creates a chat message"
   },
@@ -178,8 +159,8 @@
     "key": "chat_message_reported",
     "id": "chat message id",
     "props": {
-      "chat_id": "the chat id",
-      "chat_type": "the chat type",
+      "chat:id": "the chat id",
+      "chat:type": "the chat type",
     },
     "description": "This event is fired when a user reports a chat message"
   },
@@ -187,8 +168,8 @@
     "key": "reaction_created",
     "id": "reaction id",
     "props": {
-      "post_id": "the post id",
-      "reaction_icon_id": "the reaction icon id",
+      "post:id": "the post id",
+      "reaction_icon:id": "the reaction icon id",
     },
     "description": "This event is fired when a user creates a reaction"
   }
