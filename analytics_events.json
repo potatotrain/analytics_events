@@ -95,8 +95,8 @@
     },
     "description": "This event is fired when a user creates a post"
   },
-  "POST_DELETED": {
-    "key": "post_deleted",
+  "POST_DESTROYED": {
+    "key": "post_destroyed",
     "id": "post id",
     "props": {
       "post:id": "the post id",
