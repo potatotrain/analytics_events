@@ -1,6 +1,6 @@
 # Explanation
 
-These are definitions of the analytic events used by our internal analytics solution. The structure of an event is as follows
+These are definitions of the analytic events used by our internal analytics solution. The structure of an event is as follows:
 
 ```json
 
@@ -12,7 +12,7 @@ These are definitions of the analytic events used by our internal analytics solu
       // Properties that will be helpful when querying on this event
     },
     "description": "A description for what the event is"
-  },
+  }
 }
 
 ```
