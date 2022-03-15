@@ -172,7 +172,7 @@
       "chat_id": "the chat id",
       "chat_type": "the chat type",
     },
-    "description": "This event is fired when a user creates a chat"
+    "description": "This event is fired when a user creates a chat message"
   },
   "CHAT_MESSAGE_REPORTED": {
     "key": "chat_message_reported",
@@ -181,7 +181,7 @@
       "chat_id": "the chat id",
       "chat_type": "the chat type",
     },
-    "description": "This event is fired when a user reports a chat"
+    "description": "This event is fired when a user reports a chat message"
   },
   "REACTION_CREATED": {
     "key": "reaction_created",
