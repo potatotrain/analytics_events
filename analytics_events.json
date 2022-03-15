@@ -85,8 +85,8 @@
     },
     "description": "This event is fired when a user creates a post"
   },
-  "POST_DELETED": {
-    "key": "post_deleted",
+  "POST_DESTROYED": {
+    "key": "post_destroyed",
     "id": "post id",
     "props": {
       "post_type": "the post type",
@@ -109,8 +109,8 @@
     },
     "description": "This event is fired when a user creates a comment or reply"
   },
-  "POST_RESPONSE_DELETED": {
-    "key": "post_response_deleted",
+  "POST_RESPONSE_DESTROYED": {
+    "key": "post_response_destroyed",
     "id": "post id",
     "props": {
       "post_type": "the post type",
