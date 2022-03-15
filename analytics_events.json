@@ -154,7 +154,7 @@
       "chat_id": "the chat id",
       "chat_type": "the chat type",
     },
-    "description": "This event is fired when a user enters the presence channel="
+    "description": "This event is fired when a user enters the presence channel"
   },
   "CHAT_LEFT": {
     "key": "chat_left",
@@ -163,7 +163,7 @@
       "chat_id": "the chat id",
       "chat_type": "the chat type",
     },
-    "description": "This event is fired when a user leaves the presence channel="
+    "description": "This event is fired when a user leaves the presence channel"
   },
   "CHAT_MESSAGE_CREATED": {
     "key": "chat_message_created",
