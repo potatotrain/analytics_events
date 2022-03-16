@@ -131,7 +131,7 @@
     "id": "chat id",
     "props": {
       "chat:id": "the chat id",
-      "chat:type": "the chat type",
+      "chat:chat_type": "the chat type",
     },
     "description": "This event is fired when a user enters the presence channel"
   },
@@ -140,7 +140,7 @@
     "id": "chat id",
     "props": {
       "chat:id": "the chat id",
-      "chat:type": "the chat type",
+      "chat:chat_type": "the chat type",
     },
     "description": "This event is fired when a user leaves the presence channel"
   },
@@ -149,7 +149,7 @@
     "id": "chat message id",
     "props": {
       "chat:id": "the chat id",
-      "chat:type": "the chat type",
+      "chat:chat_type": "the chat type",
     },
     "description": "This event is fired when a user creates a chat message"
   },
@@ -158,7 +158,7 @@
     "id": "chat message id",
     "props": {
       "chat:id": "the chat id",
-      "chat:type": "the chat type",
+      "chat:chat_type": "the chat type",
     },
     "description": "This event is fired when a user reports a chat message"
   },
