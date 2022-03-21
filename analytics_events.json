@@ -27,6 +27,7 @@
     "key": "user_subscription_created",
     "id": "subscription id",
     "props": {
+      "user:id": "the user id who was subscribed to",
       "user:verified": "boolean reflecting if the target user is verified"
     },
     "description": "This event is fired when a user has been subscribed to"
@@ -35,6 +36,7 @@
     "key": "user_subscription_destroyed",
     "id": "subscription id",
     "props": {
+      "user:id": "the user id who was unsubscribed from",
       "user:verified": "boolean reflecting if the target user is verified"
     },
     "description": "This event is fired when a user has been unsubscribed from"
