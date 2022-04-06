@@ -48,7 +48,8 @@
       "post:id": "the post id to which the like belongs to",
       "post:post_type": "the post type",
       "post:user_id": "the user id of the posts owner",
-      "post:ancestry_depth": "the post ancestry",
+      "post:ancestry": "the ancestry of the post",
+      "post:ancestry_depth": "the post ancestry depth (0 root, 1 comment, 2 reply)",
       "post:sponsored": "boolean reflecting if the post is sponsored",
       "post:featured": "boolean reflecting if the post is featured",
       "post:parent_id": "the parent id of the post to which the like belongs to (omitted if post is root)"
@@ -62,7 +63,8 @@
       "post:id": "the post id to which the like belongs to",
       "post:post_type": "the post type",
       "post:user_id": "the user id of the posts owner",
-      "post:ancestry_depth": "the post ancestry",
+      "post:ancestry": "the ancestry of the post",
+      "post:ancestry_depth": "the post ancestry depth (0 root, 1 comment, 2 reply)",
       "post:sponsored": "boolean reflecting if the post is sponsored",
       "post:featured": "boolean reflecting if the post is featured",
       "post:parent_id": "the parent id of the post to which the like belongs to (omitted if post is root)"
@@ -76,7 +78,8 @@
       "post:id": "the post id",
       "post:post_type": "the post type",
       "post:user_id": "the user id of the posts owner",
-      "post:ancestry_depth": "the post ancestry",
+      "post:ancestry": "the ancestry of the post",
+      "post:ancestry_depth": "the post ancestry depth (0 root, 1 comment, 2 reply)",
       "post:sponsored": "boolean reflecting if the post is sponsored",
       "post:featured": "boolean reflecting if the post is featured",
       "post:parent_id": "the parent id of the post to which the like belongs to (omitted if post is root)"
@@ -90,7 +93,8 @@
       "post:id": "the post id",
       "post:post_type": "the post type",
       "post:user_id": "the user id of the posts owner",
-      "post:ancestry_depth": "the post ancestry",
+      "post:ancestry": "the ancestry of the post",
+      "post:ancestry_depth": "the post ancestry depth (0 root, 1 comment, 2 reply)",
       "post:sponsored": "boolean reflecting if the post is sponsored",
       "post:featured": "boolean reflecting if the post is featured",
       "post:parent_id": "the parent id of the post to which the like belongs to (omitted if post is root)"
@@ -104,7 +108,8 @@
       "post:id": "the post id",
       "post:post_type": "the post type",
       "post:user_id": "the user id of the posts owner",
-      "post:ancestry_depth": "the post ancestry",
+      "post:ancestry": "the ancestry of the post",
+      "post:ancestry_depth": "the post ancestry depth (0 root, 1 comment, 2 reply)",
       "post:sponsored": "boolean reflecting if the post is sponsored",
       "post:featured": "boolean reflecting if the post is featured",
       "post:parent_id": "the parent id of the post to which the like belongs to (omitted if post is root)"
@@ -118,7 +123,8 @@
       "post:id": "the post id",
       "post:post_type": "the post type",
       "post:user_id": "the user id of the posts owner",
-      "post:ancestry_depth": "the post ancestry",
+      "post:ancestry": "the ancestry of the post",
+      "post:ancestry_depth": "the post ancestry depth (0 root, 1 comment, 2 reply)",
       "post:sponsored": "boolean reflecting if the post is sponsored",
       "post:featured": "boolean reflecting if the post is featured",
       "post:parent_id": "the parent id of the post to which the like belongs to (omitted if post is root)"
