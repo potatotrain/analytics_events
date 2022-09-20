@@ -192,5 +192,30 @@
       "reaction_icon:id": "the reaction icon id",
     },
     "description": "This event is fired when a user creates a reaction"
+  },
+  "EVENT_VIEWED": {
+    "key": "event_viewed",
+    "id": "event id",
+    "props": {
+      "event:type": "the type of the event",
+    },
+    "description": "This event is fired when a user views an Event"
+  },
+  "EVENTS_VIEWED": {
+    "key": "events_viewed",
+    "id": "events",
+    "props": {
+      "filter": "the type of the event",
+    },
+    "description": "This event is fired when a user views the Events page under a certain filter"
+  },
+  "EVENT_ATTENDEE_UPSERTED": {
+    "key": "event_attendee_upserted",
+    "id": "event attendee id",
+    "props": {
+      "event:id": "the event id",
+      "event_attendee:status": "the event attendees status",
+    },
+    "description": "This event is fired when a user changes their RSVP to an Event"
   }
 }
