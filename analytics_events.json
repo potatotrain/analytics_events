@@ -197,7 +197,7 @@
     "key": "event_viewed",
     "id": "event id",
     "props": {
-      "event:type": "the type of the event",
+      "event:event_type": "the type of the event",
     },
     "description": "This event is fired when a user views an Event"
   },
