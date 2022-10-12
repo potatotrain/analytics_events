@@ -217,5 +217,13 @@
       "event_attendee:status": "the event attendees status",
     },
     "description": "This event is fired when a user changes their RSVP to an Event"
+  },
+  "EVENT_ATTENDEE_DELETED": {
+    "key": "event_attendee_deleted",
+    "id": "event attendee id",
+    "props": {
+      "event:id": "the event id",
+    },
+    "description": "This event is fired when a user deletes their RSVP to an Event"
   }
 }
