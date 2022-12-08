@@ -5,10 +5,7 @@
 app_started
 ```
 #### Description
-
 This event is fired when the app starts
-
-&nbsp;
 
 &nbsp;
 
@@ -19,10 +16,7 @@ This event is fired when the app starts
 splash_viewed
 ```
 #### Description
-
 This event is fired when the splash screen is viewed.
-
-&nbsp;
 
 &nbsp;
 
@@ -33,10 +27,7 @@ This event is fired when the splash screen is viewed.
 welcome_viewed
 ```
 #### Description
-
 This event is fired when the welcome screen is viewed. The welcome screen is where users can choose to join or login to the community.
-
-&nbsp;
 
 &nbsp;
 
@@ -47,10 +38,7 @@ This event is fired when the welcome screen is viewed. The welcome screen is whe
 registration_viewed
 ```
 #### Description
-
 This event is fired when the registration screen is viewed. The registration screen is where users enter their first and last name as well as their email.
-
-&nbsp;
 
 &nbsp;
 
@@ -61,10 +49,7 @@ This event is fired when the registration screen is viewed. The registration scr
 verification_viewed
 ```
 #### Description
-
 This event is fired when the verification screen is viewed. The verification screen is where users are asked to check their email and verify it.
-
-&nbsp;
 
 &nbsp;
 
@@ -75,10 +60,7 @@ This event is fired when the verification screen is viewed. The verification scr
 profile_creation_viewed
 ```
 #### Description
-
 This event is fired when the profile creation screen is viewed. The profile creation screen is where users are asked to provide a profile picture, username, biography, and password.
-
-&nbsp;
 
 &nbsp;
 
@@ -89,10 +71,7 @@ This event is fired when the profile creation screen is viewed. The profile crea
 cf_onboarding_viewed
 ```
 #### Description
-
 This event is fired when the custom fields capture screen is presented during onboarding. This only happens when the community has custom fields configured that are required.
-
-&nbsp;
 
 &nbsp;
 
@@ -103,10 +82,7 @@ This event is fired when the custom fields capture screen is presented during on
 cf_onboarding_save
 ```
 #### Description
-
 This event is fired when the user saves their responses to the required custom fields during onboarding.
-
-&nbsp;
 
 &nbsp;
 
@@ -117,10 +93,7 @@ This event is fired when the user saves their responses to the required custom f
 cf_onboarding_outdated
 ```
 #### Description
-
 This event is fired when the user saves their responses to the required custom fields during onboarding and the custom fields have changed. The system will reload the updated custom fields and prompt the user to refill the form.
-
-&nbsp;
 
 &nbsp;
 
@@ -131,10 +104,7 @@ This event is fired when the user saves their responses to the required custom f
 preuser_created
 ```
 #### Description
-
 This event is fired when preuser object has been successfully created on the server. The preuser object is where we store data during the onboarding process.
-
-&nbsp;
 
 &nbsp;
 
@@ -145,10 +115,7 @@ This event is fired when preuser object has been successfully created on the ser
 preuser_migrated
 ```
 #### Description
-
 This event is fired when preuser object has been successfully migrated into a user object on the server.
-
-&nbsp;
 
 &nbsp;
 
@@ -159,10 +126,7 @@ This event is fired when preuser object has been successfully migrated into a us
 sign_in_viewed
 ```
 #### Description
-
 This event is fired when the sing in screen is viewed. The sign in screen is where existing users can log into the community.
-
-&nbsp;
 
 &nbsp;
 
@@ -173,10 +137,7 @@ This event is fired when the sing in screen is viewed. The sign in screen is whe
 password_forgot_viewed
 ```
 #### Description
-
 This event is fired when the forgot password screen is viewed.
-
-&nbsp;
 
 &nbsp;
 
@@ -187,10 +148,7 @@ This event is fired when the forgot password screen is viewed.
 password_reset_viewed
 ```
 #### Description
-
 This event is fired when the password reset screen is viewed. This screen is shown to the user after a password reset is requested.
-
-&nbsp;
 
 &nbsp;
 
@@ -201,10 +159,7 @@ This event is fired when the password reset screen is viewed. This screen is sho
 pending_viewed
 ```
 #### Description
-
 This event is only applicable to closed communities. This event is fired when the user has completed onboarding and is now pending approval.
-
-&nbsp;
 
 &nbsp;
 
@@ -215,10 +170,7 @@ This event is only applicable to closed communities. This event is fired when th
 terms_of_service_viewed
 ```
 #### Description
-
 This event is fired when the terms of service screen is viewed.
-
-&nbsp;
 
 &nbsp;
 
@@ -229,10 +181,7 @@ This event is fired when the terms of service screen is viewed.
 privacy_policy_viewed
 ```
 #### Description
-
 This event is fired when the privacy policy screen is viewed.
-
-&nbsp;
 
 &nbsp;
 
@@ -243,10 +192,7 @@ This event is fired when the privacy policy screen is viewed.
 data_policy_viewed
 ```
 #### Description
-
 This event is fired when the data policy screen is viewed.
-
-&nbsp;
 
 &nbsp;
 
@@ -257,10 +203,7 @@ This event is fired when the data policy screen is viewed.
 signed_up
 ```
 #### Description
-
 This event is fired when a user has completed onboarding and taps the enter button on the last screen of the onbaording experience.
-
-&nbsp;
 
 &nbsp;
 
@@ -271,10 +214,7 @@ This event is fired when a user has completed onboarding and taps the enter butt
 logged_in
 ```
 #### Description
-
 This event is fired when a user has logged into the community.
-
-&nbsp;
 
 &nbsp;
 
@@ -285,10 +225,7 @@ This event is fired when a user has logged into the community.
 logged_out
 ```
 #### Description
-
 This event is fired when a user has logged out of the community.
-
-&nbsp;
 
 &nbsp;
 
@@ -299,10 +236,7 @@ This event is fired when a user has logged out of the community.
 cf_recapture_viewed
 ```
 #### Description
-
 This event is fired when the custom fields capture screen is viewed. This only happens when the community has custom fields configured that are required.
-
-&nbsp;
 
 &nbsp;
 
@@ -313,10 +247,7 @@ This event is fired when the custom fields capture screen is viewed. This only h
 cf_recapture_save
 ```
 #### Description
-
 This event is fired when the user saves their responses to the required custom fields
-
-&nbsp;
 
 &nbsp;
 
@@ -327,10 +258,7 @@ This event is fired when the user saves their responses to the required custom f
 cf_recapture_outdated
 ```
 #### Description
-
 This event is fired when the user saves their responses to the required custom fields and the custom fields have changed. The system will reload the updated custom fields and prompt the user to refill the form.
-
-&nbsp;
 
 &nbsp;
 
@@ -341,10 +269,7 @@ This event is fired when the user saves their responses to the required custom f
 web_membership_launched
 ```
 #### Description
-
 This event is fired when the user is forwarded to the web product for information on membership. This could be to view a current subscription, explore products, or re-authorize a payment.
-
-&nbsp;
 
 &nbsp;
 
@@ -355,10 +280,7 @@ This event is fired when the user is forwarded to the web product for informatio
 slideout_opened
 ```
 #### Description
-
 This event is fired when the slide-out menu is opened.
-
-&nbsp;
 
 &nbsp;
 
@@ -369,10 +291,7 @@ This event is fired when the slide-out menu is opened.
 slideout_closed
 ```
 #### Description
-
 This event is fired when the slide-out menu is closed.
-
-&nbsp;
 
 &nbsp;
 
@@ -383,10 +302,7 @@ This event is fired when the slide-out menu is closed.
 post_created
 ```
 #### Description
-
 This event is fired when a post has been successfully created on the server. The post can have any ancestry level (Root, Comment, or Reply)
-
-&nbsp;
 
 &nbsp;
 
@@ -397,10 +313,7 @@ This event is fired when a post has been successfully created on the server. The
 post_create_attempt
 ```
 #### Description
-
 This event is fired when a request to create a post has been submitted to the server. The post can have any ancestry level (Root, Comment, or Reply)
-
-&nbsp;
 
 &nbsp;
 
@@ -411,10 +324,7 @@ This event is fired when a request to create a post has been submitted to the se
 post_destroyed
 ```
 #### Description
-
 This event is fired when a post has been destroyed.
-
-&nbsp;
 
 &nbsp;
 
@@ -425,10 +335,7 @@ This event is fired when a post has been destroyed.
 post_viewed
 ```
 #### Description
-
 This event is fired when the post screen is viewed.
-
-&nbsp;
 
 &nbsp;
 
@@ -439,10 +346,7 @@ This event is fired when the post screen is viewed.
 post_owner_follow
 ```
 #### Description
-
 This event is fired when a user follows the post author from the posts screen. This is only possible when navigating to a post via the discover section of the application.
-
-&nbsp;
 
 &nbsp;
 
@@ -453,10 +357,7 @@ This event is fired when a user follows the post author from the posts screen. T
 giphy_viewed
 ```
 #### Description
-
 This event is fired when a user views the gif picker when creating a media rich comment or reply.
-
-&nbsp;
 
 &nbsp;
 
@@ -467,10 +368,7 @@ This event is fired when a user views the gif picker when creating a media rich 
 user_viewed
 ```
 #### Description
-
 This event is fired when a users profile is viewed.
-
-&nbsp;
 
 &nbsp;
 
@@ -481,10 +379,7 @@ This event is fired when a users profile is viewed.
 user_tab_viewed
 ```
 #### Description
-
 This event is fired when a certain section of a user profile is viewed. The sections are posts, activities, and about
-
-&nbsp;
 
 &nbsp;
 
@@ -495,10 +390,7 @@ This event is fired when a certain section of a user profile is viewed. The sect
 profile_edited
 ```
 #### Description
-
 This event is fired when the edit profile screen is viewed.
-
-&nbsp;
 
 &nbsp;
 
@@ -509,10 +401,7 @@ This event is fired when the edit profile screen is viewed.
 profile_cf_outdated
 ```
 #### Description
-
 This event is fired when the user saves changes to their profile in the edit profile screen and the custom fields have changed. The system will reload the updated custom fields and prompt the user to refill the form.
-
-&nbsp;
 
 &nbsp;
 
@@ -523,10 +412,7 @@ This event is fired when the user saves changes to their profile in the edit pro
 user_subscription_created
 ```
 #### Description
-
 This event is fired when a user subscribes/turns on post notifications for another user.
-
-&nbsp;
 
 &nbsp;
 
@@ -537,10 +423,7 @@ This event is fired when a user subscribes/turns on post notifications for anoth
 user_subscription_destroyed
 ```
 #### Description
-
 This event is fired when a user unsubscribes/turns off post notifications for another user.
-
-&nbsp;
 
 &nbsp;
 
@@ -551,10 +434,7 @@ This event is fired when a user unsubscribes/turns off post notifications for an
 hashtag_viewed
 ```
 #### Description
-
 This event is fired when the hashtags screen is viewed.
-
-&nbsp;
 
 &nbsp;
 
@@ -565,10 +445,7 @@ This event is fired when the hashtags screen is viewed.
 feed_viewed
 ```
 #### Description
-
 This event is fired when the home feed is viewed.
-
-&nbsp;
 
 &nbsp;
 
@@ -579,10 +456,7 @@ This event is fired when the home feed is viewed.
 messages_viewed
 ```
 #### Description
-
 This event is fired when the messages screen is viewed.
-
-&nbsp;
 
 &nbsp;
 
@@ -593,10 +467,7 @@ This event is fired when the messages screen is viewed.
 activity_viewed
 ```
 #### Description
-
 This event is fired when the activity screen is viewed.
-
-&nbsp;
 
 &nbsp;
 
@@ -607,10 +478,7 @@ This event is fired when the activity screen is viewed.
 direct_message_viewed
 ```
 #### Description
-
 This event is fired when the messaging screen is viewed.
-
-&nbsp;
 
 &nbsp;
 
@@ -621,10 +489,7 @@ This event is fired when the messaging screen is viewed.
 direct_message_archived
 ```
 #### Description
-
 This event is fired when a direct messaging conversation is archived.
-
-&nbsp;
 
 &nbsp;
 
@@ -635,10 +500,7 @@ This event is fired when a direct messaging conversation is archived.
 direct_message_unarchived
 ```
 #### Description
-
 This event is fired when a direct messaging conversation is un-archived.
-
-&nbsp;
 
 &nbsp;
 
@@ -649,10 +511,7 @@ This event is fired when a direct messaging conversation is un-archived.
 direct_message_settings_viewed
 ```
 #### Description
-
 This event is fired when the settings screen for a direct message conversation is viewed.
-
-&nbsp;
 
 &nbsp;
 
@@ -663,10 +522,7 @@ This event is fired when the settings screen for a direct message conversation i
 direct_message_settings_open
 ```
 #### Description
-
 This event is fired when the user opens the settings for a direct message conversation.
-
-&nbsp;
 
 &nbsp;
 
@@ -677,10 +533,7 @@ This event is fired when the user opens the settings for a direct message conver
 direct_message_settings_changed
 ```
 #### Description
-
 This event is fired when the user changes a setting for a direct message conversation.
-
-&nbsp;
 
 &nbsp;
 
@@ -691,10 +544,7 @@ This event is fired when the user changes a setting for a direct message convers
 profile_viewed
 ```
 #### Description
-
 This event is fired when a user views their own profile via the profile tab.
-
-&nbsp;
 
 &nbsp;
 
@@ -705,10 +555,7 @@ This event is fired when a user views their own profile via the profile tab.
 discover_viewed
 ```
 #### Description
-
 This event is fired when a user views the discover tab.
-
-&nbsp;
 
 &nbsp;
 
@@ -719,10 +566,7 @@ This event is fired when a user views the discover tab.
 discover_tab_viewed
 ```
 #### Description
-
 This event is fired when a specific page of the discover tab has been viewed. The pages can be verified, featured, trending, new, and all-time.
-
-&nbsp;
 
 &nbsp;
 
@@ -733,10 +577,7 @@ This event is fired when a specific page of the discover tab has been viewed. Th
 discover_card_viewed
 ```
 #### Description
-
 This event is fired when a user taps on a card in the discover tab.
-
-&nbsp;
 
 &nbsp;
 
@@ -747,10 +588,7 @@ This event is fired when a user taps on a card in the discover tab.
 settings_viewed
 ```
 #### Description
-
 This event is fired when the settings screen is viewed.
-
-&nbsp;
 
 &nbsp;
 
@@ -761,10 +599,7 @@ This event is fired when the settings screen is viewed.
 search_viewed
 ```
 #### Description
-
 This event is fired when the search screen is viewed.
-
-&nbsp;
 
 &nbsp;
 
@@ -775,10 +610,7 @@ This event is fired when the search screen is viewed.
 search_performed
 ```
 #### Description
-
 This event is fired when a search is performed.
-
-&nbsp;
 
 &nbsp;
 
@@ -789,10 +621,7 @@ This event is fired when a search is performed.
 browser_viewed
 ```
 #### Description
-
 This event is fired when the in app browser screen is viewed.
-
-&nbsp;
 
 &nbsp;
 
@@ -803,10 +632,7 @@ This event is fired when the in app browser screen is viewed.
 group_viewed
 ```
 #### Description
-
 This event is fired when a group screen is viewed.
-
-&nbsp;
 
 &nbsp;
 
@@ -817,10 +643,7 @@ This event is fired when a group screen is viewed.
 group_feed_viewed
 ```
 #### Description
-
 This event is fired when a groups feed is viewed.
-
-&nbsp;
 
 &nbsp;
 
@@ -831,10 +654,7 @@ This event is fired when a groups feed is viewed.
 group_chat_viewed
 ```
 #### Description
-
 This event is fired when a groups chat is viewed.
-
-&nbsp;
 
 &nbsp;
 
@@ -845,10 +665,7 @@ This event is fired when a groups chat is viewed.
 group_members_viewed
 ```
 #### Description
-
 This event is fired when a groups member list is viewed.
-
-&nbsp;
 
 &nbsp;
 
@@ -859,10 +676,7 @@ This event is fired when a groups member list is viewed.
 group_settings_viewed
 ```
 #### Description
-
 This event is fired when a groups settings screen is viewed.
-
-&nbsp;
 
 &nbsp;
 
@@ -873,10 +687,7 @@ This event is fired when a groups settings screen is viewed.
 group_settings_changed
 ```
 #### Description
-
 This event is fired when a groups settings are changed.
-
-&nbsp;
 
 &nbsp;
 
@@ -887,10 +698,7 @@ This event is fired when a groups settings are changed.
 group_joined
 ```
 #### Description
-
 This event is fired when a user joins a group.
-
-&nbsp;
 
 &nbsp;
 
@@ -901,10 +709,7 @@ This event is fired when a user joins a group.
 group_feed_card_viewed
 ```
 #### Description
-
 This event is fired when a post is opened from the group feed.
-
-&nbsp;
 
 &nbsp;
 
@@ -915,10 +720,7 @@ This event is fired when a post is opened from the group feed.
 group_post_notifications
 ```
 #### Description
-
 This event is fired when a user changes their group post notification setting.
-
-&nbsp;
 
 &nbsp;
 
@@ -929,10 +731,7 @@ This event is fired when a user changes their group post notification setting.
 group_add_to_home
 ```
 #### Description
-
 This event is fired when a user changes their group subscription setting.
-
-&nbsp;
 
 &nbsp;
 
@@ -943,10 +742,7 @@ This event is fired when a user changes their group subscription setting.
 group_profile_display
 ```
 #### Description
-
 This event is fired when a user changes their group display setting.
-
-&nbsp;
 
 &nbsp;
 
@@ -957,10 +753,7 @@ This event is fired when a user changes their group display setting.
 group_left
 ```
 #### Description
-
 This event is fired when a user leaves a group.
-
-&nbsp;
 
 &nbsp;
 
@@ -971,10 +764,7 @@ This event is fired when a user leaves a group.
 chat_entered
 ```
 #### Description
-
 This event is fired when a user enters a chat.
-
-&nbsp;
 
 &nbsp;
 
@@ -985,10 +775,7 @@ This event is fired when a user enters a chat.
 chat_left
 ```
 #### Description
-
 This event is fired when a user leaves a chat.
-
-&nbsp;
 
 &nbsp;
 
@@ -999,10 +786,7 @@ This event is fired when a user leaves a chat.
 reply_chat_message
 ```
 #### Description
-
 This event is fired when a user replies to a chat message.
-
-&nbsp;
 
 &nbsp;
 
@@ -1013,10 +797,7 @@ This event is fired when a user replies to a chat message.
 chat_message_reported
 ```
 #### Description
-
 This event is fired when a user reports a chat message.
-
-&nbsp;
 
 &nbsp;
 
@@ -1027,10 +808,7 @@ This event is fired when a user reports a chat message.
 chat_message_created
 ```
 #### Description
-
 This event is fired when a chat message is created.
-
-&nbsp;
 
 &nbsp;
 
@@ -1041,10 +819,7 @@ This event is fired when a chat message is created.
 live_started
 ```
 #### Description
-
 This event is fired when a Livestream is started.
-
-&nbsp;
 
 &nbsp;
 
@@ -1055,10 +830,7 @@ This event is fired when a Livestream is started.
 live_ended
 ```
 #### Description
-
 This event is fired when a Livestream has ended.
-
-&nbsp;
 
 &nbsp;
 
@@ -1069,10 +841,7 @@ This event is fired when a Livestream has ended.
 live_closed
 ```
 #### Description
-
 This event is fired when a Livestream is closed.
-
-&nbsp;
 
 &nbsp;
 
@@ -1083,10 +852,7 @@ This event is fired when a Livestream is closed.
 reaction_created
 ```
 #### Description
-
 This event is fired when a reaction is created on a Livestream.
-
-&nbsp;
 
 &nbsp;
 
@@ -1097,10 +863,7 @@ This event is fired when a reaction is created on a Livestream.
 paywall_viewed
 ```
 #### Description
-
 This event is fired when the paywall screen is viewed. This event applies to membership communities only.
-
-&nbsp;
 
 &nbsp;
 
@@ -1111,10 +874,7 @@ This event is fired when the paywall screen is viewed. This event applies to mem
 start_trial_opened
 ```
 #### Description
-
 This event is fired when a user chooses to start a trial via a paywall. This event applies to membership communities only.
-
-&nbsp;
 
 &nbsp;
 
@@ -1125,10 +885,7 @@ This event is fired when a user chooses to start a trial via a paywall. This eve
 purchase_membership_opened
 ```
 #### Description
-
 This event is fired when a user chooses to purchase a membership via a paywall. This event applies to membership communities only.
-
-&nbsp;
 
 &nbsp;
 
@@ -1139,10 +896,7 @@ This event is fired when a user chooses to purchase a membership via a paywall. 
 explore_options_opened
 ```
 #### Description
-
 This event is fired when a user chooses to explore product options via a paywall. This event applies to membership communities only.
-
-&nbsp;
 
 &nbsp;
 
@@ -1153,10 +907,7 @@ This event is fired when a user chooses to explore product options via a paywall
 blocks_viewed
 ```
 #### Description
-
 This event is fired when the blocks screen is viewed via the settings screen.
-
-&nbsp;
 
 &nbsp;
 
@@ -1167,10 +918,7 @@ This event is fired when the blocks screen is viewed via the settings screen.
 mobile_notifications_viewed
 ```
 #### Description
-
 This event is fired when the mobile notifications screen is viewed via the settings screen.
-
-&nbsp;
 
 &nbsp;
 
@@ -1181,10 +929,7 @@ This event is fired when the mobile notifications screen is viewed via the setti
 notification_permission_granted
 ```
 #### Description
-
 This event is fired when the user grants permissions to be sent push notifications.
-
-&nbsp;
 
 &nbsp;
 
@@ -1195,10 +940,7 @@ This event is fired when the user grants permissions to be sent push notificatio
 like_created
 ```
 #### Description
-
 This event is fired when a like is created on a post.
-
-&nbsp;
 
 &nbsp;
 
@@ -1209,10 +951,7 @@ This event is fired when a like is created on a post.
 like_destroyed
 ```
 #### Description
-
 This event is fired when a like is removed from a post.
-
-&nbsp;
 
 &nbsp;
 
@@ -1223,10 +962,7 @@ This event is fired when a like is removed from a post.
 post_flagged
 ```
 #### Description
-
 This event is fired when a post is marked as flagged by a user.
-
-&nbsp;
 
 &nbsp;
 
@@ -1237,10 +973,7 @@ This event is fired when a post is marked as flagged by a user.
 follow_created
 ```
 #### Description
-
 This event is fired when a user follows another user.
-
-&nbsp;
 
 &nbsp;
 
@@ -1251,10 +984,7 @@ This event is fired when a user follows another user.
 follow_destroyed
 ```
 #### Description
-
 This event is fired when a user un-follows another user.
-
-&nbsp;
 
 &nbsp;
 
@@ -1265,10 +995,7 @@ This event is fired when a user un-follows another user.
 event_viewed
 ```
 #### Description
-
 This event is fired when a user views an event.
-
-&nbsp;
 
 &nbsp;
 
@@ -1279,10 +1006,7 @@ This event is fired when a user views an event.
 events_viewed
 ```
 #### Description
-
 This event is fired when the events screen is viewed.
-
-&nbsp;
 
 &nbsp;
 
@@ -1293,10 +1017,7 @@ This event is fired when the events screen is viewed.
 event_attendee_upserted
 ```
 #### Description
-
 This event is fired when a user creates or updates their RSVP to an event.
-
-&nbsp;
 
 &nbsp;
 
@@ -1307,10 +1028,7 @@ This event is fired when a user creates or updates their RSVP to an event.
 event_attendee_deleted
 ```
 #### Description
-
 This event is fired when a user removes their RSVP to an event.
-
-&nbsp;
 
 &nbsp;
 
