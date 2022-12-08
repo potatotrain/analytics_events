@@ -1,7 +1,7 @@
 {
   "APP_STARTED": {
     "key": "app_started",
-    "description": "This event is fired when the app starts"
+    "description": "This event is fired when the app starts."
   },
   "SPLASH_VIEWED": {
     "key": "splash_viewed",

@@ -2,7 +2,7 @@
 ## APP STARTED
 ```app_started```
 
-This event is fired when the app starts
+This event is fired when the app starts.
 
 &nbsp;
 &nbsp;
