@@ -13,7 +13,7 @@ File.open('mixpanel_events.md', 'w+') do |file|
   json.values.each do |event|
     title = "\#\#\# #{event['key'].upcase.gsub!('_', ' ')}"
     key   = "```#{event['key']}```"
-    desc  = "> #{event['description']}"
+    desc  = "#{event['description']}"
 
     file.write("#{title}\n#{key}\n#{desc}\n\n\n\n")
   end
