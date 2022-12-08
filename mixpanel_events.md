@@ -1,1034 +1,1033 @@
 # Mixpanel Analytic Events
-&nbsp;
 ## APP STARTED
-Event Name
+####Event Name
 ```
 app_started
 ```
-Description
+####Description
 
 This event is fired when the app starts
 &nbsp;
 ---
 &nbsp;
 ## SPLASH VIEWED
-Event Name
+####Event Name
 ```
 splash_viewed
 ```
-Description
+####Description
 
 This event is fired when the splash screen is viewed.
 &nbsp;
 ---
 &nbsp;
 ## WELCOME VIEWED
-Event Name
+####Event Name
 ```
 welcome_viewed
 ```
-Description
+####Description
 
 This event is fired when the welcome screen is viewed. The welcome screen is where users can choose to join or login to the community.
 &nbsp;
 ---
 &nbsp;
 ## REGISTRATION VIEWED
-Event Name
+####Event Name
 ```
 registration_viewed
 ```
-Description
+####Description
 
 This event is fired when the registration screen is viewed. The registration screen is where users enter their first and last name as well as their email.
 &nbsp;
 ---
 &nbsp;
 ## VERIFICATION VIEWED
-Event Name
+####Event Name
 ```
 verification_viewed
 ```
-Description
+####Description
 
 This event is fired when the verification screen is viewed. The verification screen is where users are asked to check their email and verify it.
 &nbsp;
 ---
 &nbsp;
 ## PROFILE CREATION VIEWED
-Event Name
+####Event Name
 ```
 profile_creation_viewed
 ```
-Description
+####Description
 
 This event is fired when the profile creation screen is viewed. The profile creation screen is where users are asked to provide a profile picture, username, biography, and password.
 &nbsp;
 ---
 &nbsp;
 ## CF ONBOARDING VIEWED
-Event Name
+####Event Name
 ```
 cf_onboarding_viewed
 ```
-Description
+####Description
 
 This event is fired when the custom fields capture screen is presented during onboarding. This only happens when the community has custom fields configured that are required.
 &nbsp;
 ---
 &nbsp;
 ## CF ONBOARDING SAVE
-Event Name
+####Event Name
 ```
 cf_onboarding_save
 ```
-Description
+####Description
 
 This event is fired when the user saves their responses to the required custom fields during onboarding.
 &nbsp;
 ---
 &nbsp;
 ## CF ONBOARDING OUTDATED
-Event Name
+####Event Name
 ```
 cf_onboarding_outdated
 ```
-Description
+####Description
 
 This event is fired when the user saves their responses to the required custom fields during onboarding and the custom fields have changed. The system will reload the updated custom fields and prompt the user to refill the form.
 &nbsp;
 ---
 &nbsp;
 ## PREUSER CREATED
-Event Name
+####Event Name
 ```
 preuser_created
 ```
-Description
+####Description
 
 This event is fired when preuser object has been successfully created on the server. The preuser object is where we store data during the onboarding process.
 &nbsp;
 ---
 &nbsp;
 ## PREUSER MIGRATED
-Event Name
+####Event Name
 ```
 preuser_migrated
 ```
-Description
+####Description
 
 This event is fired when preuser object has been successfully migrated into a user object on the server.
 &nbsp;
 ---
 &nbsp;
 ## SIGN IN VIEWED
-Event Name
+####Event Name
 ```
 sign_in_viewed
 ```
-Description
+####Description
 
 This event is fired when the sing in screen is viewed. The sign in screen is where existing users can log into the community.
 &nbsp;
 ---
 &nbsp;
 ## PASSWORD FORGOT VIEWED
-Event Name
+####Event Name
 ```
 password_forgot_viewed
 ```
-Description
+####Description
 
 This event is fired when the forgot password screen is viewed.
 &nbsp;
 ---
 &nbsp;
 ## PASSWORD RESET VIEWED
-Event Name
+####Event Name
 ```
 password_reset_viewed
 ```
-Description
+####Description
 
 This event is fired when the password reset screen is viewed. This screen is shown to the user after a password reset is requested.
 &nbsp;
 ---
 &nbsp;
 ## PENDING VIEWED
-Event Name
+####Event Name
 ```
 pending_viewed
 ```
-Description
+####Description
 
 This event is only applicable to closed communities. This event is fired when the user has completed onboarding and is now pending approval.
 &nbsp;
 ---
 &nbsp;
 ## TERMS OF SERVICE VIEWED
-Event Name
+####Event Name
 ```
 terms_of_service_viewed
 ```
-Description
+####Description
 
 This event is fired when the terms of service screen is viewed.
 &nbsp;
 ---
 &nbsp;
 ## PRIVACY POLICY VIEWED
-Event Name
+####Event Name
 ```
 privacy_policy_viewed
 ```
-Description
+####Description
 
 This event is fired when the privacy policy screen is viewed.
 &nbsp;
 ---
 &nbsp;
 ## DATA POLICY VIEWED
-Event Name
+####Event Name
 ```
 data_policy_viewed
 ```
-Description
+####Description
 
 This event is fired when the data policy screen is viewed.
 &nbsp;
 ---
 &nbsp;
 ## SIGNED UP
-Event Name
+####Event Name
 ```
 signed_up
 ```
-Description
+####Description
 
 This event is fired when a user has completed onboarding and taps the enter button on the last screen of the onbaording experience.
 &nbsp;
 ---
 &nbsp;
 ## LOGGED IN
-Event Name
+####Event Name
 ```
 logged_in
 ```
-Description
+####Description
 
 This event is fired when a user has logged into the community.
 &nbsp;
 ---
 &nbsp;
 ## LOGGED OUT
-Event Name
+####Event Name
 ```
 logged_out
 ```
-Description
+####Description
 
 This event is fired when a user has logged out of the community.
 &nbsp;
 ---
 &nbsp;
 ## CF RECAPTURE VIEWED
-Event Name
+####Event Name
 ```
 cf_recapture_viewed
 ```
-Description
+####Description
 
 This event is fired when the custom fields capture screen is viewed. This only happens when the community has custom fields configured that are required.
 &nbsp;
 ---
 &nbsp;
 ## CF RECAPTURE SAVE
-Event Name
+####Event Name
 ```
 cf_recapture_save
 ```
-Description
+####Description
 
 This event is fired when the user saves their responses to the required custom fields
 &nbsp;
 ---
 &nbsp;
 ## CF RECAPTURE OUTDATED
-Event Name
+####Event Name
 ```
 cf_recapture_outdated
 ```
-Description
+####Description
 
 This event is fired when the user saves their responses to the required custom fields and the custom fields have changed. The system will reload the updated custom fields and prompt the user to refill the form.
 &nbsp;
 ---
 &nbsp;
 ## WEB MEMBERSHIP LAUNCHED
-Event Name
+####Event Name
 ```
 web_membership_launched
 ```
-Description
+####Description
 
 This event is fired when the user is forwarded to the web product for information on membership. This could be to view a current subscription, explore products, or re-authorize a payment.
 &nbsp;
 ---
 &nbsp;
 ## SLIDEOUT OPENED
-Event Name
+####Event Name
 ```
 slideout_opened
 ```
-Description
+####Description
 
 This event is fired when the slide-out menu is opened.
 &nbsp;
 ---
 &nbsp;
 ## SLIDEOUT CLOSED
-Event Name
+####Event Name
 ```
 slideout_closed
 ```
-Description
+####Description
 
 This event is fired when the slide-out menu is closed.
 &nbsp;
 ---
 &nbsp;
 ## POST CREATED
-Event Name
+####Event Name
 ```
 post_created
 ```
-Description
+####Description
 
 This event is fired when a post has been successfully created on the server. The post can have any ancestry level (Root, Comment, or Reply)
 &nbsp;
 ---
 &nbsp;
 ## POST CREATE ATTEMPT
-Event Name
+####Event Name
 ```
 post_create_attempt
 ```
-Description
+####Description
 
 This event is fired when a request to create a post has been submitted to the server. The post can have any ancestry level (Root, Comment, or Reply)
 &nbsp;
 ---
 &nbsp;
 ## POST DESTROYED
-Event Name
+####Event Name
 ```
 post_destroyed
 ```
-Description
+####Description
 
 This event is fired when a post has been destroyed.
 &nbsp;
 ---
 &nbsp;
 ## POST VIEWED
-Event Name
+####Event Name
 ```
 post_viewed
 ```
-Description
+####Description
 
 This event is fired when the post screen is viewed.
 &nbsp;
 ---
 &nbsp;
 ## POST OWNER FOLLOW
-Event Name
+####Event Name
 ```
 post_owner_follow
 ```
-Description
+####Description
 
 This event is fired when a user follows the post author from the posts screen. This is only possible when navigating to a post via the discover section of the application.
 &nbsp;
 ---
 &nbsp;
 ## GIPHY VIEWED
-Event Name
+####Event Name
 ```
 giphy_viewed
 ```
-Description
+####Description
 
 This event is fired when a user views the gif picker when creating a media rich comment or reply.
 &nbsp;
 ---
 &nbsp;
 ## USER VIEWED
-Event Name
+####Event Name
 ```
 user_viewed
 ```
-Description
+####Description
 
 This event is fired when a users profile is viewed.
 &nbsp;
 ---
 &nbsp;
 ## USER TAB VIEWED
-Event Name
+####Event Name
 ```
 user_tab_viewed
 ```
-Description
+####Description
 
 This event is fired when a certain section of a user profile is viewed. The sections are posts, activities, and about
 &nbsp;
 ---
 &nbsp;
 ## PROFILE EDITED
-Event Name
+####Event Name
 ```
 profile_edited
 ```
-Description
+####Description
 
 This event is fired when the edit profile screen is viewed.
 &nbsp;
 ---
 &nbsp;
 ## PROFILE CF OUTDATED
-Event Name
+####Event Name
 ```
 profile_cf_outdated
 ```
-Description
+####Description
 
 This event is fired when the user saves changes to their profile in the edit profile screen and the custom fields have changed. The system will reload the updated custom fields and prompt the user to refill the form.
 &nbsp;
 ---
 &nbsp;
 ## USER SUBSCRIPTION CREATED
-Event Name
+####Event Name
 ```
 user_subscription_created
 ```
-Description
+####Description
 
 This event is fired when a user subscribes/turns on post notifications for another user.
 &nbsp;
 ---
 &nbsp;
 ## USER SUBSCRIPTION DESTROYED
-Event Name
+####Event Name
 ```
 user_subscription_destroyed
 ```
-Description
+####Description
 
 This event is fired when a user unsubscribes/turns off post notifications for another user.
 &nbsp;
 ---
 &nbsp;
 ## HASHTAG VIEWED
-Event Name
+####Event Name
 ```
 hashtag_viewed
 ```
-Description
+####Description
 
 This event is fired when the hashtags screen is viewed.
 &nbsp;
 ---
 &nbsp;
 ## FEED VIEWED
-Event Name
+####Event Name
 ```
 feed_viewed
 ```
-Description
+####Description
 
 This event is fired when the home feed is viewed.
 &nbsp;
 ---
 &nbsp;
 ## MESSAGES VIEWED
-Event Name
+####Event Name
 ```
 messages_viewed
 ```
-Description
+####Description
 
 This event is fired when the messages screen is viewed.
 &nbsp;
 ---
 &nbsp;
 ## ACTIVITY VIEWED
-Event Name
+####Event Name
 ```
 activity_viewed
 ```
-Description
+####Description
 
 This event is fired when the activity screen is viewed.
 &nbsp;
 ---
 &nbsp;
 ## DIRECT MESSAGE VIEWED
-Event Name
+####Event Name
 ```
 direct_message_viewed
 ```
-Description
+####Description
 
 This event is fired when the messaging screen is viewed.
 &nbsp;
 ---
 &nbsp;
 ## DIRECT MESSAGE ARCHIVED
-Event Name
+####Event Name
 ```
 direct_message_archived
 ```
-Description
+####Description
 
 This event is fired when a direct messaging conversation is archived.
 &nbsp;
 ---
 &nbsp;
 ## DIRECT MESSAGE UNARCHIVED
-Event Name
+####Event Name
 ```
 direct_message_unarchived
 ```
-Description
+####Description
 
 This event is fired when a direct messaging conversation is un-archived.
 &nbsp;
 ---
 &nbsp;
 ## DIRECT MESSAGE SETTINGS VIEWED
-Event Name
+####Event Name
 ```
 direct_message_settings_viewed
 ```
-Description
+####Description
 
 This event is fired when the settings screen for a direct message conversation is viewed.
 &nbsp;
 ---
 &nbsp;
 ## DIRECT MESSAGE SETTINGS OPEN
-Event Name
+####Event Name
 ```
 direct_message_settings_open
 ```
-Description
+####Description
 
 This event is fired when the user opens the settings for a direct message conversation.
 &nbsp;
 ---
 &nbsp;
 ## DIRECT MESSAGE SETTINGS CHANGED
-Event Name
+####Event Name
 ```
 direct_message_settings_changed
 ```
-Description
+####Description
 
 This event is fired when the user changes a setting for a direct message conversation.
 &nbsp;
 ---
 &nbsp;
 ## PROFILE VIEWED
-Event Name
+####Event Name
 ```
 profile_viewed
 ```
-Description
+####Description
 
 This event is fired when a user views their own profile via the profile tab.
 &nbsp;
 ---
 &nbsp;
 ## DISCOVER VIEWED
-Event Name
+####Event Name
 ```
 discover_viewed
 ```
-Description
+####Description
 
 This event is fired when a user views the discover tab.
 &nbsp;
 ---
 &nbsp;
 ## DISCOVER TAB VIEWED
-Event Name
+####Event Name
 ```
 discover_tab_viewed
 ```
-Description
+####Description
 
 This event is fired when a specific page of the discover tab has been viewed. The pages can be verified, featured, trending, new, and all-time.
 &nbsp;
 ---
 &nbsp;
 ## DISCOVER CARD VIEWED
-Event Name
+####Event Name
 ```
 discover_card_viewed
 ```
-Description
+####Description
 
 This event is fired when a user taps on a card in the discover tab.
 &nbsp;
 ---
 &nbsp;
 ## SETTINGS VIEWED
-Event Name
+####Event Name
 ```
 settings_viewed
 ```
-Description
+####Description
 
 This event is fired when the settings screen is viewed.
 &nbsp;
 ---
 &nbsp;
 ## SEARCH VIEWED
-Event Name
+####Event Name
 ```
 search_viewed
 ```
-Description
+####Description
 
 This event is fired when the search screen is viewed.
 &nbsp;
 ---
 &nbsp;
 ## SEARCH PERFORMED
-Event Name
+####Event Name
 ```
 search_performed
 ```
-Description
+####Description
 
 This event is fired when a search is performed.
 &nbsp;
 ---
 &nbsp;
 ## BROWSER VIEWED
-Event Name
+####Event Name
 ```
 browser_viewed
 ```
-Description
+####Description
 
 This event is fired when the in app browser screen is viewed.
 &nbsp;
 ---
 &nbsp;
 ## GROUP VIEWED
-Event Name
+####Event Name
 ```
 group_viewed
 ```
-Description
+####Description
 
 This event is fired when a group screen is viewed.
 &nbsp;
 ---
 &nbsp;
 ## GROUP FEED VIEWED
-Event Name
+####Event Name
 ```
 group_feed_viewed
 ```
-Description
+####Description
 
 This event is fired when a groups feed is viewed.
 &nbsp;
 ---
 &nbsp;
 ## GROUP CHAT VIEWED
-Event Name
+####Event Name
 ```
 group_chat_viewed
 ```
-Description
+####Description
 
 This event is fired when a groups chat is viewed.
 &nbsp;
 ---
 &nbsp;
 ## GROUP MEMBERS VIEWED
-Event Name
+####Event Name
 ```
 group_members_viewed
 ```
-Description
+####Description
 
 This event is fired when a groups member list is viewed.
 &nbsp;
 ---
 &nbsp;
 ## GROUP SETTINGS VIEWED
-Event Name
+####Event Name
 ```
 group_settings_viewed
 ```
-Description
+####Description
 
 This event is fired when a groups settings screen is viewed.
 &nbsp;
 ---
 &nbsp;
 ## GROUP SETTINGS CHANGED
-Event Name
+####Event Name
 ```
 group_settings_changed
 ```
-Description
+####Description
 
 This event is fired when a groups settings are changed.
 &nbsp;
 ---
 &nbsp;
 ## GROUP JOINED
-Event Name
+####Event Name
 ```
 group_joined
 ```
-Description
+####Description
 
 This event is fired when a user joins a group.
 &nbsp;
 ---
 &nbsp;
 ## GROUP FEED CARD VIEWED
-Event Name
+####Event Name
 ```
 group_feed_card_viewed
 ```
-Description
+####Description
 
 This event is fired when a post is opened from the group feed.
 &nbsp;
 ---
 &nbsp;
 ## GROUP POST NOTIFICATIONS
-Event Name
+####Event Name
 ```
 group_post_notifications
 ```
-Description
+####Description
 
 This event is fired when a user changes their group post notification setting.
 &nbsp;
 ---
 &nbsp;
 ## GROUP ADD TO HOME
-Event Name
+####Event Name
 ```
 group_add_to_home
 ```
-Description
+####Description
 
 This event is fired when a user changes their group subscription setting.
 &nbsp;
 ---
 &nbsp;
 ## GROUP PROFILE DISPLAY
-Event Name
+####Event Name
 ```
 group_profile_display
 ```
-Description
+####Description
 
 This event is fired when a user changes their group display setting.
 &nbsp;
 ---
 &nbsp;
 ## GROUP LEFT
-Event Name
+####Event Name
 ```
 group_left
 ```
-Description
+####Description
 
 This event is fired when a user leaves a group.
 &nbsp;
 ---
 &nbsp;
 ## CHAT ENTERED
-Event Name
+####Event Name
 ```
 chat_entered
 ```
-Description
+####Description
 
 This event is fired when a user enters a chat.
 &nbsp;
 ---
 &nbsp;
 ## CHAT LEFT
-Event Name
+####Event Name
 ```
 chat_left
 ```
-Description
+####Description
 
 This event is fired when a user leaves a chat.
 &nbsp;
 ---
 &nbsp;
 ## REPLY CHAT MESSAGE
-Event Name
+####Event Name
 ```
 reply_chat_message
 ```
-Description
+####Description
 
 This event is fired when a user replies to a chat message.
 &nbsp;
 ---
 &nbsp;
 ## CHAT MESSAGE REPORTED
-Event Name
+####Event Name
 ```
 chat_message_reported
 ```
-Description
+####Description
 
 This event is fired when a user reports a chat message.
 &nbsp;
 ---
 &nbsp;
 ## CHAT MESSAGE CREATED
-Event Name
+####Event Name
 ```
 chat_message_created
 ```
-Description
+####Description
 
 This event is fired when a chat message is created.
 &nbsp;
 ---
 &nbsp;
 ## LIVE STARTED
-Event Name
+####Event Name
 ```
 live_started
 ```
-Description
+####Description
 
 This event is fired when a Livestream is started.
 &nbsp;
 ---
 &nbsp;
 ## LIVE ENDED
-Event Name
+####Event Name
 ```
 live_ended
 ```
-Description
+####Description
 
 This event is fired when a Livestream has ended.
 &nbsp;
 ---
 &nbsp;
 ## LIVE CLOSED
-Event Name
+####Event Name
 ```
 live_closed
 ```
-Description
+####Description
 
 This event is fired when a Livestream is closed.
 &nbsp;
 ---
 &nbsp;
 ## REACTION CREATED
-Event Name
+####Event Name
 ```
 reaction_created
 ```
-Description
+####Description
 
 This event is fired when a reaction is created on a Livestream.
 &nbsp;
 ---
 &nbsp;
 ## PAYWALL VIEWED
-Event Name
+####Event Name
 ```
 paywall_viewed
 ```
-Description
+####Description
 
 This event is fired when the paywall screen is viewed. This event applies to membership communities only.
 &nbsp;
 ---
 &nbsp;
 ## START TRIAL OPENED
-Event Name
+####Event Name
 ```
 start_trial_opened
 ```
-Description
+####Description
 
 This event is fired when a user chooses to start a trial via a paywall. This event applies to membership communities only.
 &nbsp;
 ---
 &nbsp;
 ## PURCHASE MEMBERSHIP OPENED
-Event Name
+####Event Name
 ```
 purchase_membership_opened
 ```
-Description
+####Description
 
 This event is fired when a user chooses to purchase a membership via a paywall. This event applies to membership communities only.
 &nbsp;
 ---
 &nbsp;
 ## EXPLORE OPTIONS OPENED
-Event Name
+####Event Name
 ```
 explore_options_opened
 ```
-Description
+####Description
 
 This event is fired when a user chooses to explore product options via a paywall. This event applies to membership communities only.
 &nbsp;
 ---
 &nbsp;
 ## BLOCKS VIEWED
-Event Name
+####Event Name
 ```
 blocks_viewed
 ```
-Description
+####Description
 
 This event is fired when the blocks screen is viewed via the settings screen.
 &nbsp;
 ---
 &nbsp;
 ## MOBILE NOTIFICATIONS VIEWED
-Event Name
+####Event Name
 ```
 mobile_notifications_viewed
 ```
-Description
+####Description
 
 This event is fired when the mobile notifications screen is viewed via the settings screen.
 &nbsp;
 ---
 &nbsp;
 ## NOTIFICATION PERMISSION GRANTED
-Event Name
+####Event Name
 ```
 notification_permission_granted
 ```
-Description
+####Description
 
 This event is fired when the user grants permissions to be sent push notifications.
 &nbsp;
 ---
 &nbsp;
 ## LIKE CREATED
-Event Name
+####Event Name
 ```
 like_created
 ```
-Description
+####Description
 
 This event is fired when a like is created on a post.
 &nbsp;
 ---
 &nbsp;
 ## LIKE DESTROYED
-Event Name
+####Event Name
 ```
 like_destroyed
 ```
-Description
+####Description
 
 This event is fired when a like is removed from a post.
 &nbsp;
 ---
 &nbsp;
 ## POST FLAGGED
-Event Name
+####Event Name
 ```
 post_flagged
 ```
-Description
+####Description
 
 This event is fired when a post is marked as flagged by a user.
 &nbsp;
 ---
 &nbsp;
 ## FOLLOW CREATED
-Event Name
+####Event Name
 ```
 follow_created
 ```
-Description
+####Description
 
 This event is fired when a user follows another user.
 &nbsp;
 ---
 &nbsp;
 ## FOLLOW DESTROYED
-Event Name
+####Event Name
 ```
 follow_destroyed
 ```
-Description
+####Description
 
 This event is fired when a user un-follows another user.
 &nbsp;
 ---
 &nbsp;
 ## EVENT VIEWED
-Event Name
+####Event Name
 ```
 event_viewed
 ```
-Description
+####Description
 
 This event is fired when a user views an event.
 &nbsp;
 ---
 &nbsp;
 ## EVENTS VIEWED
-Event Name
+####Event Name
 ```
 events_viewed
 ```
-Description
+####Description
 
 This event is fired when the events screen is viewed.
 &nbsp;
 ---
 &nbsp;
 ## EVENT ATTENDEE UPSERTED
-Event Name
+####Event Name
 ```
 event_attendee_upserted
 ```
-Description
+####Description
 
 This event is fired when a user creates or updates their RSVP to an event.
 &nbsp;
 ---
 &nbsp;
 ## EVENT ATTENDEE DELETED
-Event Name
+####Event Name
 ```
 event_attendee_deleted
 ```
-Description
+####Description
 
 This event is fired when a user removes their RSVP to an event.
 &nbsp;
