@@ -1,1 +1,378 @@
-{}
+{
+  "APP_STARTED": {
+    "key": "app_started",
+    "description": "This event is fired when the app starts"
+  },
+  "SPLASH_VIEWED": {
+    "key": "splash_viewed",
+    "description": "This event is fired when the splash screen is viewed."
+  },
+  "WELCOME_VIEWED": {
+    "key": "welcome_viewed",
+    "description": "This event is fired when the welcome screen is viewed. The welcome screen is where users can choose to join or login to the community."
+  },
+  "REGISTRATION_VIEWED": {
+    "key": "registration_viewed",
+    "description": "This event is fired when the registration screen is viewed. The registration screen is where users enter their first and last name as well as their email."
+  },
+  "VERIFICATION_VIEWED": {
+    "key": "verification_viewed",
+    "description": "This event is fired when the verification screen is viewed. The verification screen is where users are asked to check their email and verify it."
+  },
+  "PROFILE_CREATION_VIEWED": {
+    "key": "profile_creation_viewed",
+    "description": "This event is fired when the profile creation screen is viewed. The profile creation screen is where users are asked to provide a profile picture, username, biography, and password."
+  },
+  "CF_ONBOARDING_VIEWED": {
+    "key": "cf_onboarding_viewed",
+    "description": "This event is fired when the custom fields capture screen is presented during onboarding. This only happens when the community has custom fields configured that are required."
+  },
+  "CF_ONBOARDING_SAVE": {
+    "key": "cf_onboarding_save",
+    "description": "This event is fired when the user saves their responses to the required custom fields during onboarding."
+  },
+  "CF_ONBOARDING_OUTDATED": {
+    "key": "cf_onboarding_outdated",
+    "description": "This event is fired when the user saves their responses to the required custom fields during onboarding and the custom fields have changed. The system will reload the updated custom fields and prompt the user to refill the form."
+  },
+  "PREUSER_CREATED": {
+    "key": "preuser_created",
+    "description": "This event is fired when preuser object has been successfully created on the server. The preuser object is where we store data during the onboarding process."
+  },
+  "PREUSER_MIGRATED": {
+    "key": "preuser_migrated",
+    "description": "This event is fired when preuser object has been successfully migrated into a user object on the server."
+  },
+  "SIGN_IN_VIEWED": {
+    "key": "sign_in_viewed",
+    "description": "This event is fired when the sing in screen is viewed. The sign in screen is where existing users can log into the community."
+  },
+  "PASSWORD_FORGOT_VIEWED": {
+    "key": "password_forgot_viewed",
+    "description": "This event is fired when the forgot password screen is viewed."
+  },
+  "PASSWORD_RESET_VIEWED": {
+    "key": "password_reset_viewed",
+    "description": "This event is fired when the password reset screen is viewed. This screen is shown to the user after a password reset is requested."
+  },
+  "PENDING_VIEWED": {
+    "key": "pending_viewed",
+    "description": "This event is only applicable to closed communities. This event is fired when the user has completed onboarding and is now pending approval."
+  },
+  "TERMS_OF_SERVICE_VIEWED": {
+    "key": "terms_of_service_viewed",
+    "description": "This event is fired when the terms of service screen is viewed."
+  },
+  "PRIVACY_POLICY_VIEWED": {
+    "key": "privacy_policy_viewed",
+    "description": "This event is fired when the privacy policy screen is viewed."
+  },
+  "DATA_POLICY_VIEWED": {
+    "key": "data_policy_viewed",
+    "description": "This event is fired when the data policy screen is viewed."
+  },
+  "SIGNED_UP": {
+    "key": "signed_up",
+    "description": "This event is fired when a user has completed onboarding and taps the enter button on the last screen of the onbaording experience."
+  },
+  "LOGGED_IN": {
+    "key": "logged_in",
+    "description": "This event is fired when a user has logged into the community."
+  },
+  "LOGGED_OUT": {
+    "key": "logged_out",
+    "description": "This event is fired when a user has logged out of the community."
+  },
+  "CF_RECAPTURE_VIEWED": {
+    "key": "cf_recapture_viewed",
+    "description": "This event is fired when the custom fields capture screen is viewed. This only happens when the community has custom fields configured that are required."
+  },
+  "CF_RECAPTURE_SAVE": {
+    "key": "cf_recapture_save",
+    "description": "This event is fired when the user saves their responses to the required custom fields"
+  },
+  "CF_RECAPTURE_OUTDATED": {
+    "key": "cf_recapture_outdated",
+    "description": "This event is fired when the user saves their responses to the required custom fields and the custom fields have changed. The system will reload the updated custom fields and prompt the user to refill the form."
+  },
+  "WEB_MEMBERSHIP_LAUNCHED": {
+    "key": "web_membership_launched",
+    "description": "This event is fired when the user is forwarded to the web product for information on membership. This could be to view a current subscription, explore products, or re-authorize a payment."
+  },
+  "SLIDEOUT_OPENED": {
+    "key": "slideout_opened",
+    "description": "This event is fired when the slide-out menu is opened."
+  },
+  "SLIDEOUT_CLOSED": {
+    "key": "slideout_closed",
+    "description": "This event is fired when the slide-out menu is closed."
+  },
+  "POST_CREATED": {
+    "key": "post_created",
+    "description": "This event is fired when a post has been successfully created on the server. The post can have any ancestry level (Root, Comment, or Reply)"
+  },
+  "POST_CREATE_ATTEMPT": {
+    "key": "post_create_attempt",
+    "description": "This event is fired when a request to create a post has been submitted to the server. The post can have any ancestry level (Root, Comment, or Reply)"
+  },
+  "POST_DESTROYED": {
+    "key": "post_destroyed",
+    "description": "This event is fired when a post has been destroyed."
+  },
+  "POST_VIEWED": {
+    "key": "post_viewed",
+    "description": "This event is fired when the post screen is viewed."
+  },
+  "POST_OWNER_FOLLOW": {
+    "key": "post_owner_follow",
+    "description": "This event is fired when a user follows the post author from the posts screen. This is only possible when navigating to a post via the discover section of the application."
+  },
+  "GIPHY_VIEWED": {
+    "key": "giphy_viewed",
+    "description": "This event is fired when a user views the gif picker when creating a media rich comment or reply."
+  },
+  "USER_VIEWED": {
+    "key": "user_viewed",
+    "description": "This event is fired when a users profile is viewed."
+  },
+  "USER_TAB_VIEWED": {
+    "key": "user_tab_viewed",
+    "description": "This event is fired when a certain section of a user profile is viewed. The sections are posts, activities, and about"
+  },
+  "PROFILE_EDITED": {
+    "key": "profile_edited",
+    "description": "This event is fired when the edit profile screen is viewed."
+  },
+  "PROFILE_CF_OUTDATED": {
+    "key": "profile_cf_outdated",
+    "description": "This event is fired when the user saves changes to their profile in the edit profile screen and the custom fields have changed. The system will reload the updated custom fields and prompt the user to refill the form."
+  },
+  "USER_SUBSCRIPTION_CREATED": {
+    "key": "user_subscription_created",
+    "description": "This event is fired when a user subscribes/turns on post notifications for another user."
+  },
+  "USER_SUBSCRIPTION_DESTROYED": {
+    "key": "user_subscription_destroyed",
+    "description": "This event is fired when a user unsubscribes/turns off post notifications for another user."
+  },
+  "HASHTAG_VIEWED": {
+    "key": "hashtag_viewed",
+    "description": "This event is fired when the hashtags screen is viewed."
+  },
+  "FEED_VIEWED": {
+    "key": "feed_viewed",
+    "description": "This event is fired when the home feed is viewed."
+  },
+  "MESSAGES_VIEWED": {
+    "key": "messages_viewed",
+    "description": "This event is fired when the messages screen is viewed."
+  },
+  "ACTIVITY_VIEWED": {
+    "key": "activity_viewed",
+    "description": "This event is fired when the activity screen is viewed."
+  },
+  "DIRECT_MESSAGE_VIEWED": {
+    "key": "direct_message_viewed",
+    "description": "This event is fired when the messaging screen is viewed."
+  },
+  "DIRECT_MESSAGE_ARCHIVED": {
+    "key": "direct_message_archived",
+    "description": "This event is fired when a direct messaging conversation is archived."
+  },
+  "DIRECT_MESSAGE_UNARCHIVED": {
+    "key": "direct_message_unarchived",
+    "description": "This event is fired when a direct messaging conversation is un-archived."
+  },
+  "DIRECT_MESSAGE_SETTINGS_VIEWED": {
+    "key": "direct_message_settings_viewed",
+    "description": "This event is fired when the settings screen for a direct message conversation is viewed."
+  },
+  "DIRECT_MESSAGE_SETTINGS_OPEN": {
+    "key": "direct_message_settings_open",
+    "description": "This event is fired when the user opens the settings for a direct message conversation."
+  },
+  "DIRECT_MESSAGE_SETTINGS_CHANGED": {
+    "key": "direct_message_settings_changed",
+    "description": "This event is fired when the user changes a setting for a direct message conversation."
+  },
+  "PROFILE_VIEWED": {
+    "key": "profile_viewed",
+    "description": "This event is fired when a user views their own profile via the profile tab."
+  },
+  "DISCOVER_VIEWED": {
+    "key": "discover_viewed",
+    "description": "This event is fired when a user views the discover tab."
+  },
+  "DISCOVER_TAB_VIEWED": {
+    "key": "discover_tab_viewed",
+    "description": "This event is fired when a specific page of the discover tab has been viewed. The pages can be verified, featured, trending, new, and all-time."
+  },
+  "DISCOVER_CARD_VIEWED": {
+    "key": "discover_card_viewed",
+    "description": "This event is fired when a user taps on a card in the discover tab."
+  },
+  "SETTINGS_VIEWED": {
+    "key": "settings_viewed",
+    "description": "This event is fired when the settings screen is viewed."
+  },
+  "SEARCH_VIEWED": {
+    "key": "search_viewed",
+    "description": "This event is fired when the search screen is viewed."
+  },
+  "SEARCH_PERFORMED": {
+    "key": "search_performed",
+    "description": "This event is fired when a search is performed."
+  },
+  "BROWSER_VIEWED": {
+    "key": "browser_viewed",
+    "description": "This event is fired when the in app browser screen is viewed."
+  },
+  "GROUP_VIEWED": {
+    "key": "group_viewed",
+    "description": "This event is fired when a group screen is viewed."
+  },
+  "GROUP_FEED_VIEWED": {
+    "key": "group_feed_viewed",
+    "description": "This event is fired when a groups feed is viewed."
+  },
+  "GROUP_CHAT_VIEWED": {
+    "key": "group_chat_viewed",
+    "description": "This event is fired when a groups chat is viewed."
+  },
+  "GROUP_MEMBERS_VIEWED": {
+    "key": "group_members_viewed",
+    "description": "This event is fired when a groups member list is viewed."
+  },
+  "GROUP_SETTINGS_VIEWED": {
+    "key": "group_settings_viewed",
+    "description": "This event is fired when a groups settings screen is viewed."
+  },
+  "GROUP_SETTINGS_CHANGED": {
+    "key": "group_settings_changed",
+    "description": "This event is fired when a groups settings are changed."
+  },
+  "GROUP_JOINED": {
+    "key": "group_joined",
+    "description": "This event is fired when a user joins a group."
+  },
+  "GROUP_FEED_CARD_VIEWED": {
+    "key": "group_feed_card_viewed",
+    "description": "This event is fired when a post is opened from the group feed."
+  },
+  "GROUP_POST_NOTIFICATIONS": {
+    "key": "group_post_notifications",
+    "description": "This event is fired when a user changes their group post notification setting."
+  },
+  "GROUP_ADD_TO_HOME": {
+    "key": "group_add_to_home",
+    "description": "This event is fired when a user changes their group subscription setting."
+  },
+  "GROUP_PROFILE_DISPLAY": {
+    "key": "group_profile_display",
+    "description": "This event is fired when a user changes their group display setting."
+  },
+  "GROUP_LEFT": {
+    "key": "group_left",
+    "description": "This event is fired when a user leaves a group."
+  },
+  "CHAT_ENTERED": {
+    "key": "chat_entered",
+    "description": "This event is fired when a user enters a chat."
+  },
+  "CHAT_LEFT": {
+    "key": "chat_left",
+    "description": "This event is fired when a user leaves a chat."
+  },
+  "REPLY_CHAT_MESSAGE": {
+    "key": "reply_chat_message",
+    "description": "This event is fired when a user replies to a chat message."
+  },
+  "CHAT_MESSAGE_REPORTED": {
+    "key": "chat_message_reported",
+    "description": "This event is fired when a user reports a chat message."
+  },
+  "CHAT_MESSAGE_CREATED": {
+    "key": "chat_message_created",
+    "description": "This event is fired when a chat message is created."
+  },
+  "LIVE_STARTED": {
+    "key": "live_started",
+    "description": "This event is fired when a Livestream is started."
+  },
+  "LIVE_ENDED": {
+    "key": "live_ended",
+    "description": "This event is fired when a Livestream has ended."
+  },
+  "LIVE_CLOSED": {
+    "key": "live_closed",
+    "description": "This event is fired when a Livestream is closed."
+  },
+  "REACTION_CREATED": {
+    "key": "reaction_created",
+    "description": "This event is fired when a reaction is created on a Livestream."
+  },
+  "PAYWALL_VIEWED": {
+    "key": "paywall_viewed",
+    "description": "This event is fired when the paywall screen is viewed. This event applies to membership communities only."
+  },
+  "START_TRIAL_OPENED": {
+    "key": "start_trial_opened",
+    "description": "This event is fired when a user chooses to start a trial via a paywall. This event applies to membership communities only."
+  },
+  "PURCHASE_MEMBERSHIP_OPENED": {
+    "key": "purchase_membership_opened",
+    "description": "This event is fired when a user chooses to purchase a membership via a paywall. This event applies to membership communities only."
+  },
+  "EXPLORE_OPTIONS_OPENED": {
+    "key": "explore_options_opened",
+    "description": "This event is fired when a user chooses to explore product options via a paywall. This event applies to membership communities only."
+  },
+  "BLOCKS_VIEWED": {
+    "key": "blocks_viewed",
+    "description": "This event is fired when the blocks screen is viewed via the settings screen."
+  },
+  "MOBILE_NOTIFICATIONS_VIEWED": {
+    "key": "mobile_notifications_viewed",
+    "description": "This event is fired when the mobile notifications screen is viewed via the settings screen."
+  },
+  "NOTIFICATION_PERMISSION_GRANTED": {
+    "key": "notification_permission_granted",
+    "description": "This event is fired when the user grants permissions to be sent push notifications."
+  },
+  "LIKE_CREATED": {
+    "key": "like_created",
+    "description": "This event is fired when a like is created on a post."
+  },
+  "LIKE_DESTROYED": {
+    "key": "like_destroyed",
+    "description": "This event is fired when a like is removed from a post."
+  },
+  "POST_FLAGGED": {
+    "key": "post_flagged",
+    "description": "This event is fired when a post is marked as flagged by a user."
+  },
+  "FOLLOW_CREATED": {
+    "key": "follow_created",
+    "description": "This event is fired when a user follows another user."
+  },
+  "FOLLOW_DESTROYED": {
+    "key": "follow_destroyed",
+    "description": "This event is fired when a user un-follows another user."
+  },
+  "EVENT_VIEWED": {
+    "key": "event_viewed",
+    "description": "This event is fired when a user views an event."
+  },
+  "EVENTS_VIEWED": {
+    "key": "events_viewed",
+    "description": "This event is fired when the events screen is viewed."
+  },
+  "EVENT_ATTENDEE_UPSERTED": {
+    "key": "event_attendee_upserted",
+    "description": "This event is fired when a user creates or updates their RSVP to an event."
+  },
+  "EVENT_ATTENDEE_DELETED": {
+    "key": "event_attendee_deleted",
+    "description": "This event is fired when a user removes their RSVP to an event."
+  }
+}
