@@ -7,7 +7,7 @@ json = JSON.parse(File.read('mixpanel_events.json'))
 File.open('mixpanel_events.md', 'w+') do |file|
 
   # Writes the header
-  file.write("\# Mixpanel Analytic Events\n\n---\n\n")
+  file.write("\# Mixpanel Analytic Events\n&nbsp;\n")
 
   # Iterates over JSON and writes events
   json.values.each do |event|
@@ -15,6 +15,6 @@ File.open('mixpanel_events.md', 'w+') do |file|
     key   = "Event Name: ```#{event['key']}```"
     desc  = event['description']
 
-    file.write("#{title}\n#{key}\n\n#{desc}\n\n\n---\n\n\n")
+    file.write("#{title}\n#{key}\n\n#{desc}\n&nbsp;\n&nbsp;\n&nbsp;\n")
   end
 end
