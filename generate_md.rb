@@ -14,9 +14,8 @@ File.open('mixpanel_events.md', 'w+') do |file|
     title = "\#\#\# #{event['key'].upcase.gsub!('_', ' ')}"
     key   = "```#{event['key']}```"
     desc  = event['description']
-    table = "|Key|Description|\n|-----|-----|\n|#{key}|#{desc}|"
 
-    file.write("#{title}\n#{table}\n\n")
+    file.write("#{title}\n#{key}\n#{desc}\n\n")
   end
 end
 
