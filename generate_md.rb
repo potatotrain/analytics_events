@@ -15,6 +15,6 @@ File.open('mixpanel_events.md', 'w+') do |file|
     key   = "```\n#{event['key']}\n```"
     desc  = event['description']
 
-    file.write("#{title}\nEvent Name\n#{key}\nDescription\n#{desc}\n&nbsp;\n&nbsp;\n&nbsp;\n")
+    file.write("#{title}\nEvent Name\n#{key}\nDescription\n\n#{desc}\n&nbsp;\n---\n&nbsp;\n")
   end
 end
