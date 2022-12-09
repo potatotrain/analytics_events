@@ -1,659 +1,1242 @@
 # Mixpanel Analytic Events
-## APP STARTED
-```app_started```
 
-This event is fired when the app starts.
+## ACTIVITIES QUICK PREVIEW VIEWED
+Key: ```activities_quick_preview_viewed```
+Platforms: web
 
-&nbsp;
-&nbsp;
-## SPLASH VIEWED
-```splash_viewed```
-
-This event is fired when the splash screen is viewed.
-
-&nbsp;
-&nbsp;
-## WELCOME VIEWED
-```welcome_viewed```
-
-This event is fired when the welcome screen is viewed. The welcome screen is where users can choose to join or login to the community.
-
-&nbsp;
-&nbsp;
-## REGISTRATION VIEWED
-```registration_viewed```
-
-This event is fired when the registration screen is viewed. The registration screen is where users enter their first and last name as well as their email.
-
-&nbsp;
-&nbsp;
-## VERIFICATION VIEWED
-```verification_viewed```
-
-This event is fired when the verification screen is viewed. The verification screen is where users are asked to check their email and verify it.
-
-&nbsp;
-&nbsp;
-## PROFILE CREATION VIEWED
-```profile_creation_viewed```
-
-This event is fired when the profile creation screen is viewed. The profile creation screen is where users are asked to provide a profile picture, username, biography, and password.
-
-&nbsp;
-&nbsp;
-## CF ONBOARDING VIEWED
-```cf_onboarding_viewed```
-
-This event is fired when the custom fields capture screen is presented during onboarding. This only happens when the community has custom fields configured that are required.
-
-&nbsp;
-&nbsp;
-## CF ONBOARDING SAVE
-```cf_onboarding_save```
-
-This event is fired when the user saves their responses to the required custom fields during onboarding.
-
-&nbsp;
-&nbsp;
-## CF ONBOARDING OUTDATED
-```cf_onboarding_outdated```
-
-This event is fired when the user saves their responses to the required custom fields during onboarding and the custom fields have changed. The system will reload the updated custom fields and prompt the user to refill the form.
-
-&nbsp;
-&nbsp;
-## PREUSER CREATED
-```preuser_created```
-
-This event is fired when preuser object has been successfully created on the server. The preuser object is where we store data during the onboarding process.
-
-&nbsp;
-&nbsp;
-## PREUSER MIGRATED
-```preuser_migrated```
-
-This event is fired when preuser object has been successfully migrated into a user object on the server.
-
-&nbsp;
-&nbsp;
-## SIGN IN VIEWED
-```sign_in_viewed```
-
-This event is fired when the sing in screen is viewed. The sign in screen is where existing users can log into the community.
-
-&nbsp;
-&nbsp;
-## PASSWORD FORGOT VIEWED
-```password_forgot_viewed```
-
-This event is fired when the forgot password screen is viewed.
-
-&nbsp;
-&nbsp;
-## PASSWORD RESET VIEWED
-```password_reset_viewed```
-
-This event is fired when the password reset screen is viewed. This screen is shown to the user after a password reset is requested.
-
-&nbsp;
-&nbsp;
-## PENDING VIEWED
-```pending_viewed```
-
-This event is only applicable to closed communities. This event is fired when the user has completed onboarding and is now pending approval.
-
-&nbsp;
-&nbsp;
-## TERMS OF SERVICE VIEWED
-```terms_of_service_viewed```
-
-This event is fired when the terms of service screen is viewed.
-
-&nbsp;
-&nbsp;
-## PRIVACY POLICY VIEWED
-```privacy_policy_viewed```
-
-This event is fired when the privacy policy screen is viewed.
-
-&nbsp;
-&nbsp;
-## DATA POLICY VIEWED
-```data_policy_viewed```
-
-This event is fired when the data policy screen is viewed.
-
-&nbsp;
-&nbsp;
-## SIGNED UP
-```signed_up```
-
-This event is fired when a user has completed onboarding and taps the enter button on the last screen of the onbaording experience.
-
-&nbsp;
-&nbsp;
-## LOGGED IN
-```logged_in```
-
-This event is fired when a user has logged into the community.
-
-&nbsp;
-&nbsp;
-## LOGGED OUT
-```logged_out```
-
-This event is fired when a user has logged out of the community.
-
-&nbsp;
-&nbsp;
-## CF RECAPTURE VIEWED
-```cf_recapture_viewed```
-
-This event is fired when the custom fields capture screen is viewed. This only happens when the community has custom fields configured that are required.
-
-&nbsp;
-&nbsp;
-## CF RECAPTURE SAVE
-```cf_recapture_save```
-
-This event is fired when the user saves their responses to the required custom fields
-
-&nbsp;
-&nbsp;
-## CF RECAPTURE OUTDATED
-```cf_recapture_outdated```
-
-This event is fired when the user saves their responses to the required custom fields and the custom fields have changed. The system will reload the updated custom fields and prompt the user to refill the form.
-
-&nbsp;
-&nbsp;
-## WEB MEMBERSHIP LAUNCHED
-```web_membership_launched```
-
-This event is fired when the user is forwarded to the web product for information on membership. This could be to view a current subscription, explore products, or re-authorize a payment.
-
-&nbsp;
-&nbsp;
-## SLIDEOUT OPENED
-```slideout_opened```
-
-This event is fired when the slide-out menu is opened.
-
-&nbsp;
-&nbsp;
-## SLIDEOUT CLOSED
-```slideout_closed```
-
-This event is fired when the slide-out menu is closed.
-
-&nbsp;
-&nbsp;
-## POST CREATED
-```post_created```
-
-This event is fired when a post has been successfully created on the server. The post can have any ancestry level (Root, Comment, or Reply)
-
-&nbsp;
-&nbsp;
-## POST CREATE ATTEMPT
-```post_create_attempt```
-
-This event is fired when a request to create a post has been submitted to the server. The post can have any ancestry level (Root, Comment, or Reply)
-
-&nbsp;
-&nbsp;
-## POST DESTROYED
-```post_destroyed```
-
-This event is fired when a post has been destroyed.
-
-&nbsp;
-&nbsp;
-## POST VIEWED
-```post_viewed```
-
-This event is fired when the post screen is viewed.
-
-&nbsp;
-&nbsp;
-## POST OWNER FOLLOW
-```post_owner_follow```
-
-This event is fired when a user follows the post author from the posts screen. This is only possible when navigating to a post via the discover section of the application.
-
-&nbsp;
-&nbsp;
-## GIPHY VIEWED
-```giphy_viewed```
-
-This event is fired when a user views the gif picker when creating a media rich comment or reply.
-
-&nbsp;
-&nbsp;
-## USER VIEWED
-```user_viewed```
-
-This event is fired when a users profile is viewed.
-
-&nbsp;
-&nbsp;
-## USER TAB VIEWED
-```user_tab_viewed```
-
-This event is fired when a certain section of a user profile is viewed. The sections are posts, activities, and about
-
-&nbsp;
-&nbsp;
-## PROFILE EDITED
-```profile_edited```
-
-This event is fired when the edit profile screen is viewed.
-
-&nbsp;
-&nbsp;
-## PROFILE CF OUTDATED
-```profile_cf_outdated```
-
-This event is fired when the user saves changes to their profile in the edit profile screen and the custom fields have changed. The system will reload the updated custom fields and prompt the user to refill the form.
-
-&nbsp;
-&nbsp;
-## USER SUBSCRIPTION CREATED
-```user_subscription_created```
-
-This event is fired when a user subscribes/turns on post notifications for another user.
-
-&nbsp;
-&nbsp;
-## USER SUBSCRIPTION DESTROYED
-```user_subscription_destroyed```
-
-This event is fired when a user unsubscribes/turns off post notifications for another user.
-
-&nbsp;
-&nbsp;
-## HASHTAG VIEWED
-```hashtag_viewed```
-
-This event is fired when the hashtags screen is viewed.
-
-&nbsp;
-&nbsp;
-## FEED VIEWED
-```feed_viewed```
-
-This event is fired when the home feed is viewed.
-
-&nbsp;
-&nbsp;
-## MESSAGES VIEWED
-```messages_viewed```
 
-This event is fired when the messages screen is viewed.
 
 &nbsp;
 &nbsp;
-## ACTIVITY VIEWED
-```activity_viewed```
+## ACTIVITIES VIEWED
+Key: ```activities_viewed```
+Platforms: mobile, web
 
 This event is fired when the activity screen is viewed.
 
 &nbsp;
 &nbsp;
-## DIRECT MESSAGE VIEWED
-```direct_message_viewed```
+## ACTIVITY COMMENT CLICKED
+Key: ```activity_comment_clicked```
+Platforms: web
 
-This event is fired when the messaging screen is viewed.
 
-&nbsp;
-&nbsp;
-## DIRECT MESSAGE ARCHIVED
-```direct_message_archived```
-
-This event is fired when a direct messaging conversation is archived.
 
 &nbsp;
 &nbsp;
-## DIRECT MESSAGE UNARCHIVED
-```direct_message_unarchived```
+## ACTIVITY FOLLOW CLICKED
+Key: ```activity_follow_clicked```
+Platforms: web
 
-This event is fired when a direct messaging conversation is un-archived.
 
-&nbsp;
-&nbsp;
-## DIRECT MESSAGE SETTINGS VIEWED
-```direct_message_settings_viewed```
-
-This event is fired when the settings screen for a direct message conversation is viewed.
 
 &nbsp;
 &nbsp;
-## DIRECT MESSAGE SETTINGS OPEN
-```direct_message_settings_open```
+## ACTIVITY LIKE CLICKED
+Key: ```activity_like_clicked```
+Platforms: web
 
-This event is fired when the user opens the settings for a direct message conversation.
 
-&nbsp;
-&nbsp;
-## DIRECT MESSAGE SETTINGS CHANGED
-```direct_message_settings_changed```
-
-This event is fired when the user changes a setting for a direct message conversation.
 
 &nbsp;
 &nbsp;
-## PROFILE VIEWED
-```profile_viewed```
+## ACTIVITY MARKED HIDE
+Key: ```activity_marked_hide```
+Platforms: web
 
-This event is fired when a user views their own profile via the profile tab.
 
-&nbsp;
-&nbsp;
-## DISCOVER VIEWED
-```discover_viewed```
-
-This event is fired when a user views the discover tab.
 
 &nbsp;
 &nbsp;
-## DISCOVER TAB VIEWED
-```discover_tab_viewed```
+## ACTIVITY MARKED READ
+Key: ```activity_marked_read```
+Platforms: web
 
-This event is fired when a specific page of the discover tab has been viewed. The pages can be verified, featured, trending, new, and all-time.
 
-&nbsp;
-&nbsp;
-## DISCOVER CARD VIEWED
-```discover_card_viewed```
-
-This event is fired when a user taps on a card in the discover tab.
 
 &nbsp;
 &nbsp;
-## SETTINGS VIEWED
-```settings_viewed```
+## ACTIVITY MARKED UNREAD
+Key: ```activity_marked_unread```
+Platforms: web
 
-This event is fired when the settings screen is viewed.
 
-&nbsp;
-&nbsp;
-## SEARCH VIEWED
-```search_viewed```
-
-This event is fired when the search screen is viewed.
 
 &nbsp;
 &nbsp;
-## SEARCH PERFORMED
-```search_performed```
+## ACTIVITY REPLY CLICKED
+Key: ```activity_reply_clicked```
+Platforms: web
 
-This event is fired when a search is performed.
+
+
+&nbsp;
+&nbsp;
+## ACTIVITY SAY HI CLICKED
+Key: ```activity_say_hi_clicked```
+Platforms: web
+
+
+
+&nbsp;
+&nbsp;
+## ACTIVITY VIEWED
+Key: ```activity_viewed```
+Platforms: mobile, web
+
+This event is fired when the activity screen is viewed.
+
+&nbsp;
+&nbsp;
+## ADD PAYMENT METHOD FAILURE
+Key: ```add_payment_method_failure```
+Platforms: web
+
+
+
+&nbsp;
+&nbsp;
+## ADD PAYMENT METHOD SUCCESS
+Key: ```add_payment_method_success```
+Platforms: web
+
+
+
+&nbsp;
+&nbsp;
+## ADD USER SUBSCRIPTION ATTEMPT
+Key: ```add_user_subscription_attempt```
+Platforms: web
+
+
+
+&nbsp;
+&nbsp;
+## APP STARTED
+Key: ```app_started```
+Platforms: mobile
+
+This event is fired when the app starts.
+
+&nbsp;
+&nbsp;
+## BLOCKS VIEWED
+Key: ```blocks_viewed```
+Platforms: mobile
+
+This event is fired when the blocks screen is viewed via the settings screen.
 
 &nbsp;
 &nbsp;
 ## BROWSER VIEWED
-```browser_viewed```
+Key: ```browser_viewed```
+Platforms: mobile
 
 This event is fired when the in app browser screen is viewed.
 
 &nbsp;
 &nbsp;
-## GROUP VIEWED
-```group_viewed```
+## CF ONBOARDING OUTDATED
+Key: ```cf_onboarding_outdated```
+Platforms: mobile, web
 
-This event is fired when a group screen is viewed.
-
-&nbsp;
-&nbsp;
-## GROUP FEED VIEWED
-```group_feed_viewed```
-
-This event is fired when a groups feed is viewed.
+This event is fired when the user saves their responses to the required custom fields during onboarding and the custom fields have changed. The system will reload the updated custom fields and prompt the user to refill the form.
 
 &nbsp;
 &nbsp;
-## GROUP CHAT VIEWED
-```group_chat_viewed```
+## CF ONBOARDING SAVE
+Key: ```cf_onboarding_save```
+Platforms: mobile, web
 
-This event is fired when a groups chat is viewed.
-
-&nbsp;
-&nbsp;
-## GROUP MEMBERS VIEWED
-```group_members_viewed```
-
-This event is fired when a groups member list is viewed.
+This event is fired when the user saves their responses to the required custom fields during onboarding.
 
 &nbsp;
 &nbsp;
-## GROUP SETTINGS VIEWED
-```group_settings_viewed```
+## CF ONBOARDING VIEWED
+Key: ```cf_onboarding_viewed```
+Platforms: mobile, web
 
-This event is fired when a groups settings screen is viewed.
-
-&nbsp;
-&nbsp;
-## GROUP SETTINGS CHANGED
-```group_settings_changed```
-
-This event is fired when a groups settings are changed.
+This event is fired when the custom fields capture screen is presented during onboarding. This only happens when the community has custom fields configured that are required.
 
 &nbsp;
 &nbsp;
-## GROUP JOINED
-```group_joined```
+## CF RECAPTURE OUTDATED
+Key: ```cf_recapture_outdated```
+Platforms: mobile, web
 
-This event is fired when a user joins a group.
-
-&nbsp;
-&nbsp;
-## GROUP FEED CARD VIEWED
-```group_feed_card_viewed```
-
-This event is fired when a post is opened from the group feed.
+This event is fired when the user saves their responses to the required custom fields and the custom fields have changed. The system will reload the updated custom fields and prompt the user to refill the form.
 
 &nbsp;
 &nbsp;
-## GROUP POST NOTIFICATIONS
-```group_post_notifications```
+## CF RECAPTURE SAVE
+Key: ```cf_recapture_save```
+Platforms: mobile, web
 
-This event is fired when a user changes their group post notification setting.
-
-&nbsp;
-&nbsp;
-## GROUP ADD TO HOME
-```group_add_to_home```
-
-This event is fired when a user changes their group subscription setting.
+This event is fired when the user saves their responses to the required custom fields
 
 &nbsp;
 &nbsp;
-## GROUP PROFILE DISPLAY
-```group_profile_display```
+## CF RECAPTURE VIEWED
+Key: ```cf_recapture_viewed```
+Platforms: mobile, web
 
-This event is fired when a user changes their group display setting.
-
-&nbsp;
-&nbsp;
-## GROUP LEFT
-```group_left```
-
-This event is fired when a user leaves a group.
+This event is fired when the custom fields capture screen is viewed. This only happens when the community has custom fields configured that are required.
 
 &nbsp;
 &nbsp;
 ## CHAT ENTERED
-```chat_entered```
+Key: ```chat_entered```
+Platforms: mobile
 
 This event is fired when a user enters a chat.
 
 &nbsp;
 &nbsp;
 ## CHAT LEFT
-```chat_left```
+Key: ```chat_left```
+Platforms: mobile
 
 This event is fired when a user leaves a chat.
 
 &nbsp;
 &nbsp;
-## REPLY CHAT MESSAGE
-```reply_chat_message```
-
-This event is fired when a user replies to a chat message.
-
-&nbsp;
-&nbsp;
-## CHAT MESSAGE REPORTED
-```chat_message_reported```
-
-This event is fired when a user reports a chat message.
-
-&nbsp;
-&nbsp;
 ## CHAT MESSAGE CREATED
-```chat_message_created```
+Key: ```chat_message_created```
+Platforms: mobile, web--if-changes-are-made
 
 This event is fired when a chat message is created.
 
 &nbsp;
 &nbsp;
-## LIVE STARTED
-```live_started```
+## CHAT MESSAGE FULLSCREEN IMAGE VIEWED
+Key: ```chat_message_fullscreen_image_viewed```
+Platforms: web
 
-This event is fired when a Livestream is started.
 
-&nbsp;
-&nbsp;
-## LIVE ENDED
-```live_ended```
-
-This event is fired when a Livestream has ended.
 
 &nbsp;
 &nbsp;
-## LIVE CLOSED
-```live_closed```
+## CHAT MESSAGE FULLSCREEN VIDEO VIEWED
+Key: ```chat_message_fullscreen_video_viewed```
+Platforms: web
 
-This event is fired when a Livestream is closed.
 
-&nbsp;
-&nbsp;
-## REACTION CREATED
-```reaction_created```
-
-This event is fired when a reaction is created on a Livestream.
 
 &nbsp;
 &nbsp;
-## PAYWALL VIEWED
-```paywall_viewed```
+## CHAT MESSAGE REPORTED
+Key: ```chat_message_reported```
+Platforms: mobile
 
-This event is fired when the paywall screen is viewed. This event applies to membership communities only.
-
-&nbsp;
-&nbsp;
-## START TRIAL OPENED
-```start_trial_opened```
-
-This event is fired when a user chooses to start a trial via a paywall. This event applies to membership communities only.
+This event is fired when a user reports a chat message.
 
 &nbsp;
 &nbsp;
-## PURCHASE MEMBERSHIP OPENED
-```purchase_membership_opened```
+## COMMENT ATTEMPT
+Key: ```comment_attempt```
+Platforms: web
 
-This event is fired when a user chooses to purchase a membership via a paywall. This event applies to membership communities only.
 
-&nbsp;
-&nbsp;
-## EXPLORE OPTIONS OPENED
-```explore_options_opened```
-
-This event is fired when a user chooses to explore product options via a paywall. This event applies to membership communities only.
 
 &nbsp;
 &nbsp;
-## BLOCKS VIEWED
-```blocks_viewed```
+## COMMUNITY GATE VIEWED
+Key: ```community_gate_viewed```
+Platforms: web
 
-This event is fired when the blocks screen is viewed via the settings screen.
 
-&nbsp;
-&nbsp;
-## MOBILE NOTIFICATIONS VIEWED
-```mobile_notifications_viewed```
-
-This event is fired when the mobile notifications screen is viewed via the settings screen.
 
 &nbsp;
 &nbsp;
-## NOTIFICATION PERMISSION GRANTED
-```notification_permission_granted```
+## CREATE AND GO TO DM ATTEMPT
+Key: ```create_and_go_to_dm_attempt```
+Platforms: web
 
-This event is fired when the user grants permissions to be sent push notifications.
 
-&nbsp;
-&nbsp;
-## LIKE CREATED
-```like_created```
-
-This event is fired when a like is created on a post.
 
 &nbsp;
 &nbsp;
-## LIKE DESTROYED
-```like_destroyed```
+## DATA POLICY VIEWED
+Key: ```data_policy_viewed```
+Platforms: mobile
 
-This event is fired when a like is removed from a post.
-
-&nbsp;
-&nbsp;
-## POST FLAGGED
-```post_flagged```
-
-This event is fired when a post is marked as flagged by a user.
+This event is fired when the data policy screen is viewed.
 
 &nbsp;
 &nbsp;
-## FOLLOW CREATED
-```follow_created```
+## DIRECT MESSAGE ARCHIVED
+Key: ```direct_message_archived```
+Platforms: mobile, web
 
-This event is fired when a user follows another user.
+This event is fired when a direct messaging conversation is archived.
 
 &nbsp;
 &nbsp;
-## FOLLOW DESTROYED
-```follow_destroyed```
+## DIRECT MESSAGE SETTINGS CHANGED
+Key: ```direct_message_settings_changed```
+Platforms: mobile, web
 
-This event is fired when a user un-follows another user.
+This event is fired when the user changes a setting for a direct message conversation.
+
+&nbsp;
+&nbsp;
+## DIRECT MESSAGE SETTINGS OPEN
+Key: ```direct_message_settings_open```
+Platforms: mobile
+
+This event is fired when the user opens the settings for a direct message conversation.
+
+&nbsp;
+&nbsp;
+## DIRECT MESSAGE SETTINGS VIEWED
+Key: ```direct_message_settings_viewed```
+Platforms: mobile, web
+
+This event is fired when the settings screen for a direct message conversation is viewed.
+
+&nbsp;
+&nbsp;
+## DIRECT MESSAGE UNARCHIVED
+Key: ```direct_message_unarchived```
+Platforms: mobile, web
+
+This event is fired when a direct messaging conversation is un-archived.
+
+&nbsp;
+&nbsp;
+## DIRECT MESSAGE VIEWED
+Key: ```direct_message_viewed```
+Platforms: mobile, web
+
+This event is fired when the messaging screen is viewed.
+
+&nbsp;
+&nbsp;
+## DISCOVER CARD VIEWED
+Key: ```discover_card_viewed```
+Platforms: mobile
+
+This event is fired when a user taps on a card in the discover tab.
+
+&nbsp;
+&nbsp;
+## DISCOVER TAB VIEWED
+Key: ```discover_tab_viewed```
+Platforms: mobile
+
+This event is fired when a specific page of the discover tab has been viewed. The pages can be verified, featured, trending, new, and all-time.
+
+&nbsp;
+&nbsp;
+## DISCOVER VIEWED
+Key: ```discover_viewed```
+Platforms: mobile
+
+This event is fired when a user views the discover tab.
+
+&nbsp;
+&nbsp;
+## DOWNLOAD APP STORE
+Key: ```download_app_store```
+Platforms: web
+
+
+
+&nbsp;
+&nbsp;
+## DOWNLOAD PLAY STORE
+Key: ```download_play_store```
+Platforms: web
+
+
+
+&nbsp;
+&nbsp;
+## EDIT MEMBERSHIP VIEWED
+Key: ```edit_membership_viewed```
+Platforms: web
+
+
+
+&nbsp;
+&nbsp;
+## EMBED POST
+Key: ```embed_post```
+Platforms: web
+
+
+
+&nbsp;
+&nbsp;
+## EMBEDDED POST VIEWED
+Key: ```embedded_post_viewed```
+Platforms: web
+
+
+
+&nbsp;
+&nbsp;
+## EVENT ATTENDEE DELETED
+Key: ```event_attendee_deleted```
+Platforms: mobile
+
+This event is fired when a user removes their RSVP to an event.
+
+&nbsp;
+&nbsp;
+## EVENT ATTENDEE UPSERTED
+Key: ```event_attendee_upserted```
+Platforms: mobile
+
+This event is fired when a user creates or updates their RSVP to an event.
+
+&nbsp;
+&nbsp;
+## EVENT RSVP ATTEMPT
+Key: ```event_rsvp_attempt```
+Platforms: web
+
+
 
 &nbsp;
 &nbsp;
 ## EVENT VIEWED
-```event_viewed```
+Key: ```event_viewed```
+Platforms: mobile
 
 This event is fired when a user views an event.
 
 &nbsp;
 &nbsp;
 ## EVENTS VIEWED
-```events_viewed```
+Key: ```events_viewed```
+Platforms: mobile
 
 This event is fired when the events screen is viewed.
 
 &nbsp;
 &nbsp;
-## EVENT ATTENDEE UPSERTED
-```event_attendee_upserted```
+## EXPLORE OPTIONS OPENED
+Key: ```explore_options_opened```
+Platforms: mobile, web
 
-This event is fired when a user creates or updates their RSVP to an event.
+This event is fired when a user chooses to explore product options via a paywall. This event applies to membership communities only.
 
 &nbsp;
 &nbsp;
-## EVENT ATTENDEE DELETED
-```event_attendee_deleted```
+## FEED VIEWED
+Key: ```feed_viewed```
+Platforms: mobile
 
-This event is fired when a user removes their RSVP to an event.
+This event is fired when the home feed is viewed.
+
+&nbsp;
+&nbsp;
+## FOLLOW ATTEMPT
+Key: ```follow_attempt```
+Platforms: web
+
+
+
+&nbsp;
+&nbsp;
+## FOLLOW CREATED
+Key: ```follow_created```
+Platforms: mobile, web--if-changes-are-made
+
+This event is fired when a user follows another user.
+
+&nbsp;
+&nbsp;
+## FOLLOW DESTROYED
+Key: ```follow_destroyed```
+Platforms: mobile, web--if-changes-are-made
+
+This event is fired when a user un-follows another user.
+
+&nbsp;
+&nbsp;
+## FULLSCREEN IMAGE VIEWED
+Key: ```fullscreen_image_viewed```
+Platforms: web
+
+
+
+&nbsp;
+&nbsp;
+## FULLSCREEN VIDEO VIEWED
+Key: ```fullscreen_video_viewed```
+Platforms: web
+
+
+
+&nbsp;
+&nbsp;
+## GIPHY VIEWED
+Key: ```giphy_viewed```
+Platforms: mobile
+
+This event is fired when a user views the gif picker when creating a media rich comment or reply.
+
+&nbsp;
+&nbsp;
+## GROUP ADD TO HOME
+Key: ```group_add_to_home```
+Platforms: mobile, web
+
+This event is fired when a user changes their group subscription setting.
+
+&nbsp;
+&nbsp;
+## GROUP CHAT VIEWED
+Key: ```group_chat_viewed```
+Platforms: mobile
+
+This event is fired when a groups chat is viewed.
+
+&nbsp;
+&nbsp;
+## GROUP FEED CARD VIEWED
+Key: ```group_feed_card_viewed```
+Platforms: mobile
+
+This event is fired when a post is opened from the group feed.
+
+&nbsp;
+&nbsp;
+## GROUP FEED VIEWED
+Key: ```group_feed_viewed```
+Platforms: mobile, web
+
+This event is fired when a groups feed is viewed.
+
+&nbsp;
+&nbsp;
+## GROUP JOIN ATTEMPT
+Key: ```group_join_attempt```
+Platforms: web
+
+
+
+&nbsp;
+&nbsp;
+## GROUP JOINED
+Key: ```group_joined```
+Platforms: mobile, web--if-changes-are-made
+
+This event is fired when a user joins a group.
+
+&nbsp;
+&nbsp;
+## GROUP LEAVE
+Key: ```group_leave```
+Platforms: web
+
+
+
+&nbsp;
+&nbsp;
+## GROUP LEFT
+Key: ```group_left```
+Platforms: mobile
+
+This event is fired when a user leaves a group.
+
+&nbsp;
+&nbsp;
+## GROUP MEMBERS VIEWED
+Key: ```group_members_viewed```
+Platforms: mobile, web
+
+This event is fired when a groups member list is viewed.
+
+&nbsp;
+&nbsp;
+## GROUP POST NOTIFICATIONS
+Key: ```group_post_notifications```
+Platforms: mobile, web
+
+This event is fired when a user changes their group post notification setting.
+
+&nbsp;
+&nbsp;
+## GROUP PROFILE DISPLAY
+Key: ```group_profile_display```
+Platforms: mobile, web
+
+This event is fired when a user changes their group display setting.
+
+&nbsp;
+&nbsp;
+## GROUP SETTINGS CHANGED
+Key: ```group_settings_changed```
+Platforms: mobile, web
+
+This event is fired when a groups settings are changed.
+
+&nbsp;
+&nbsp;
+## GROUP SETTINGS VIEWED
+Key: ```group_settings_viewed```
+Platforms: mobile, web
+
+This event is fired when a groups settings screen is viewed.
+
+&nbsp;
+&nbsp;
+## GROUP VIEWED
+Key: ```group_viewed```
+Platforms: mobile, web
+
+This event is fired when a group screen is viewed.
+
+&nbsp;
+&nbsp;
+## HASHTAG VIEWED
+Key: ```hashtag_viewed```
+Platforms: mobile
+
+This event is fired when the hashtags screen is viewed.
+
+&nbsp;
+&nbsp;
+## INVOICE DOWNLOADED
+Key: ```invoice_downloaded```
+Platforms: web
+
+
+
+&nbsp;
+&nbsp;
+## INVOICE PAID
+Key: ```invoice_paid```
+Platforms: web
+
+
+
+&nbsp;
+&nbsp;
+## INVOICE RETRY VIEWED
+Key: ```invoice_retry_viewed```
+Platforms: web
+
+
+
+&nbsp;
+&nbsp;
+## INVOICES VIEWED
+Key: ```invoices_viewed```
+Platforms: web
+
+
+
+&nbsp;
+&nbsp;
+## LIKE ATTEMPT
+Key: ```like_attempt```
+Platforms: web
+
+
+
+&nbsp;
+&nbsp;
+## LIKE CREATED
+Key: ```like_created```
+Platforms: mobile, web--if-changes-are-made
+
+This event is fired when a like is created on a post.
+
+&nbsp;
+&nbsp;
+## LIKE DESTROYED
+Key: ```like_destroyed```
+Platforms: mobile, web--if-changes-are-made
+
+This event is fired when a like is removed from a post.
+
+&nbsp;
+&nbsp;
+## LIVE CLOSED
+Key: ```live_closed```
+Platforms: mobile
+
+This event is fired when a Livestream is closed.
+
+&nbsp;
+&nbsp;
+## LIVE ENDED
+Key: ```live_ended```
+Platforms: mobile
+
+This event is fired when a Livestream has ended.
+
+&nbsp;
+&nbsp;
+## LIVE STARTED
+Key: ```live_started```
+Platforms: mobile
+
+This event is fired when a Livestream is started.
+
+&nbsp;
+&nbsp;
+## LOGGED IN
+Key: ```logged_in```
+Platforms: mobile
+
+This event is fired when a user has logged into the community.
+
+&nbsp;
+&nbsp;
+## LOGGED OUT
+Key: ```logged_out```
+Platforms: mobile, web
+
+This event is fired when a user has logged out of the community.
+
+&nbsp;
+&nbsp;
+## MEMBERSHIPS VIEWED
+Key: ```memberships_viewed```
+Platforms: web
+
+
+
+&nbsp;
+&nbsp;
+## MESSAGES NEW CONVERSATION CREATED
+Key: ```messages_new_conversation_created```
+Platforms: web
+
+
+
+&nbsp;
+&nbsp;
+## MESSAGES VIEWED
+Key: ```messages_viewed```
+Platforms: mobile, web
+
+This event is fired when the messages screen is viewed.
+
+&nbsp;
+&nbsp;
+## MOBILE NOTIFICATIONS VIEWED
+Key: ```mobile_notifications_viewed```
+Platforms: mobile
+
+This event is fired when the mobile notifications screen is viewed via the settings screen.
+
+&nbsp;
+&nbsp;
+## NEW PAYMENT METHOD VIEWED
+Key: ```new_payment_method_viewed```
+Platforms: web
+
+
+
+&nbsp;
+&nbsp;
+## NOTIFICATION PERMISSION GRANTED
+Key: ```notification_permission_granted```
+Platforms: mobile
+
+This event is fired when the user grants permissions to be sent push notifications.
+
+&nbsp;
+&nbsp;
+## PASSWORD FORGOT VIEWED
+Key: ```password_forgot_viewed```
+Platforms: mobile, web
+
+This event is fired when the forgot password screen is viewed.
+
+&nbsp;
+&nbsp;
+## PASSWORD RESET VIEWED
+Key: ```password_reset_viewed```
+Platforms: mobile, web
+
+This event is fired when the password reset screen is viewed. This screen is shown to the user after a password reset is requested.
+
+&nbsp;
+&nbsp;
+## PAYWALL VIEWED
+Key: ```paywall_viewed```
+Platforms: mobile, web
+
+This event is fired when the paywall screen is viewed. This event applies to membership communities only.
+
+&nbsp;
+&nbsp;
+## PENDING VIEWED
+Key: ```pending_viewed```
+Platforms: mobile, web
+
+This event is only applicable to closed communities. This event is fired when the user has completed onboarding and is now pending approval.
+
+&nbsp;
+&nbsp;
+## POST CHAT VIEWED
+Key: ```post_chat_viewed```
+Platforms: web
+
+
+
+&nbsp;
+&nbsp;
+## POST CREATE ATTEMPT
+Key: ```post_create_attempt```
+Platforms: mobile
+
+This event is fired when a request to create a post has been submitted to the server. The post can have any ancestry level (Root, Comment, or Reply)
+
+&nbsp;
+&nbsp;
+## POST CREATED
+Key: ```post_created```
+Platforms: mobile, web
+
+This event is fired when a post has been successfully created on the server. The post can have any ancestry level (Root, Comment, or Reply)
+
+&nbsp;
+&nbsp;
+## POST DESTROYED
+Key: ```post_destroyed```
+Platforms: mobile
+
+This event is fired when a post has been destroyed.
+
+&nbsp;
+&nbsp;
+## POST FLAGGED
+Key: ```post_flagged```
+Platforms: mobile
+
+This event is fired when a post is marked as flagged by a user.
+
+&nbsp;
+&nbsp;
+## POST OWNER FOLLOW
+Key: ```post_owner_follow```
+Platforms: mobile
+
+This event is fired when a user follows the post author from the posts screen. This is only possible when navigating to a post via the discover section of the application.
+
+&nbsp;
+&nbsp;
+## POST VIEWED
+Key: ```post_viewed```
+Platforms: mobile, web
+
+This event is fired when the post screen is viewed.
+
+&nbsp;
+&nbsp;
+## PREUSER CREATED
+Key: ```preuser_created```
+Platforms: mobile, web
+
+This event is fired when preuser object has been successfully created on the server. The preuser object is where we store data during the onboarding process.
+
+&nbsp;
+&nbsp;
+## PREUSER MIGRATED
+Key: ```preuser_migrated```
+Platforms: mobile, web
+
+This event is fired when preuser object has been successfully migrated into a user object on the server.
+
+&nbsp;
+&nbsp;
+## PRIVACY POLICY VIEWED
+Key: ```privacy_policy_viewed```
+Platforms: mobile
+
+This event is fired when the privacy policy screen is viewed.
+
+&nbsp;
+&nbsp;
+## PRODUCT DETAIL VIEWED
+Key: ```product_detail_viewed```
+Platforms: web
+
+
+
+&nbsp;
+&nbsp;
+## PRODUCT LIST VIEWED
+Key: ```product_list_viewed```
+Platforms: web
+
+
+
+&nbsp;
+&nbsp;
+## PROFILE ACTIVITY VIEWED
+Key: ```profile_activity_viewed```
+Platforms: web
+
+
+
+&nbsp;
+&nbsp;
+## PROFILE CF OUTDATED
+Key: ```profile_cf_outdated```
+Platforms: mobile, web
+
+This event is fired when the user saves changes to their profile in the edit profile screen and the custom fields have changed. The system will reload the updated custom fields and prompt the user to refill the form.
+
+&nbsp;
+&nbsp;
+## PROFILE CREATION VIEWED
+Key: ```profile_creation_viewed```
+Platforms: mobile, web
+
+This event is fired when the profile creation screen is viewed. The profile creation screen is where users are asked to provide a profile picture, username, biography, and password.
+
+&nbsp;
+&nbsp;
+## PROFILE EDITED
+Key: ```profile_edited```
+Platforms: mobile
+
+This event is fired when the edit profile screen is viewed.
+
+&nbsp;
+&nbsp;
+## PROFILE VIEWED
+Key: ```profile_viewed```
+Platforms: mobile
+
+This event is fired when a user views their own profile via the profile tab.
+
+&nbsp;
+&nbsp;
+## PROMO CODE APPLIED
+Key: ```promo_code_applied```
+Platforms: web
+
+
+
+&nbsp;
+&nbsp;
+## PROMO CODE NOT AVAILABLE
+Key: ```promo_code_not_available```
+Platforms: web
+
+
+
+&nbsp;
+&nbsp;
+## PURCHASE MEMBERSHIP COMPLETE VIEWED
+Key: ```purchase_membership_complete_viewed```
+Platforms: web
+
+
+
+&nbsp;
+&nbsp;
+## PURCHASE MEMBERSHIP OPENED
+Key: ```purchase_membership_opened```
+Platforms: mobile, web
+
+This event is fired when a user chooses to purchase a membership via a paywall. This event applies to membership communities only.
+
+&nbsp;
+&nbsp;
+## PURCHASE MEMBERSHIP VIEWED
+Key: ```purchase_membership_viewed```
+Platforms: web
+
+
+
+&nbsp;
+&nbsp;
+## REACTION CREATED
+Key: ```reaction_created```
+Platforms: mobile
+
+This event is fired when a reaction is created on a Livestream.
+
+&nbsp;
+&nbsp;
+## REGISTRATION TYPE VIEWED
+Key: ```registration_type_viewed```
+Platforms: web
+
+
+
+&nbsp;
+&nbsp;
+## REGISTRATION VIEWED
+Key: ```registration_viewed```
+Platforms: mobile, web
+
+This event is fired when the registration screen is viewed. The registration screen is where users enter their first and last name as well as their email.
+
+&nbsp;
+&nbsp;
+## REMOVE PAYMENT METHOD FAILURE
+Key: ```remove_payment_method_failure```
+Platforms: web
+
+
+
+&nbsp;
+&nbsp;
+## REMOVE PAYMENT METHOD SUCCESS
+Key: ```remove_payment_method_success```
+Platforms: web
+
+
+
+&nbsp;
+&nbsp;
+## REPLY ATTEMPT
+Key: ```reply_attempt```
+Platforms: web
+
+
+
+&nbsp;
+&nbsp;
+## REPLY CHAT MESSAGE
+Key: ```reply_chat_message```
+Platforms: mobile
+
+This event is fired when a user replies to a chat message.
+
+&nbsp;
+&nbsp;
+## RESTORE RECURRING PAYMENT SUCCESS
+Key: ```restore_recurring_payment_success```
+Platforms: web
+
+
+
+&nbsp;
+&nbsp;
+## SEARCH PERFORMED
+Key: ```search_performed```
+Platforms: mobile, web
+
+This event is fired when a search is performed.
+
+&nbsp;
+&nbsp;
+## SEARCH VIEWED
+Key: ```search_viewed```
+Platforms: mobile
+
+This event is fired when the search screen is viewed.
+
+&nbsp;
+&nbsp;
+## SETTINGS OPENED
+Key: ```settings_opened```
+Platforms: web
+
+
+
+&nbsp;
+&nbsp;
+## SETTINGS VIEWED
+Key: ```settings_viewed```
+Platforms: mobile
+
+This event is fired when the settings screen is viewed.
+
+&nbsp;
+&nbsp;
+## SHARE POST
+Key: ```share_post```
+Platforms: web
+
+
+
+&nbsp;
+&nbsp;
+## SIGN IN TYPE VIEWED
+Key: ```sign_in_type_viewed```
+Platforms: web
+
+
+
+&nbsp;
+&nbsp;
+## SIGN IN VIEWED
+Key: ```sign_in_viewed```
+Platforms: mobile, web
+
+This event is fired when the sing in screen is viewed. The sign in screen is where existing users can log into the community.
+
+&nbsp;
+&nbsp;
+## SIGN UP FAILED
+Key: ```sign_up_failed```
+Platforms: web
+
+
+
+&nbsp;
+&nbsp;
+## SIGNED UP
+Key: ```signed_up```
+Platforms: mobile, web
+
+This event is fired when a user has completed onboarding and taps the enter button on the last screen of the onbaording experience.
+
+&nbsp;
+&nbsp;
+## SLIDEOUT CLOSED
+Key: ```slideout_closed```
+Platforms: mobile, web
+
+This event is fired when the slide-out menu is closed.
+
+&nbsp;
+&nbsp;
+## SLIDEOUT OPENED
+Key: ```slideout_opened```
+Platforms: mobile, web
+
+This event is fired when the slide-out menu is opened.
+
+&nbsp;
+&nbsp;
+## SPLASH VIEWED
+Key: ```splash_viewed```
+Platforms: mobile
+
+This event is fired when the splash screen is viewed.
+
+&nbsp;
+&nbsp;
+## START TRIAL OPENED
+Key: ```start_trial_opened```
+Platforms: mobile, web
+
+This event is fired when a user chooses to start a trial via a paywall. This event applies to membership communities only.
+
+&nbsp;
+&nbsp;
+## STRIPE CONFIRM CARD ERROR
+Key: ```stripe_confirm_card_error```
+Platforms: web
+
+
+
+&nbsp;
+&nbsp;
+## SUBSCRIBE TO BILLING PLAN FAILURE
+Key: ```subscribe_to_billing_plan_failure```
+Platforms: web
+
+
+
+&nbsp;
+&nbsp;
+## SUBSCRIBE TO BILLING PLAN SUCCESS
+Key: ```subscribe_to_billing_plan_success```
+Platforms: web
+
+
+
+&nbsp;
+&nbsp;
+## TERMS OF SERVICE VIEWED
+Key: ```terms_of_service_viewed```
+Platforms: mobile
+
+This event is fired when the terms of service screen is viewed.
+
+&nbsp;
+&nbsp;
+## UNSUBSCRIBE TO BILLING PLAN FAILURE
+Key: ```unsubscribe_to_billing_plan_failure```
+Platforms: web
+
+
+
+&nbsp;
+&nbsp;
+## UNSUBSCRIBE TO BILLING PLAN SUCCESS
+Key: ```unsubscribe_to_billing_plan_success```
+Platforms: web
+
+
+
+&nbsp;
+&nbsp;
+## USER ACTIVITIES PAGINATE INITIATE
+Key: ```user_activities_paginate_initiate```
+Platforms: web
+
+
+
+&nbsp;
+&nbsp;
+## USER POSTS PAGINATE INITIATE
+Key: ```user_posts_paginate_initiate```
+Platforms: web
+
+
+
+&nbsp;
+&nbsp;
+## USER SUBSCRIPTION CREATED
+Key: ```user_subscription_created```
+Platforms: mobile, web--if-changes-are-made
+
+This event is fired when a user subscribes/turns on post notifications for another user.
+
+&nbsp;
+&nbsp;
+## USER SUBSCRIPTION DESTROYED
+Key: ```user_subscription_destroyed```
+Platforms: mobile, web--if-changes-are-made
+
+This event is fired when a user unsubscribes/turns off post notifications for another user.
+
+&nbsp;
+&nbsp;
+## USER TAB VIEWED
+Key: ```user_tab_viewed```
+Platforms: mobile
+
+This event is fired when a certain section of a user profile is viewed. The sections are posts, activities, and about
+
+&nbsp;
+&nbsp;
+## USER VIEWED
+Key: ```user_viewed```
+Platforms: mobile, web
+
+This event is fired when a users profile is viewed.
+
+&nbsp;
+&nbsp;
+## VERIFICATION VIEWED
+Key: ```verification_viewed```
+Platforms: mobile, web
+
+This event is fired when the verification screen is viewed. The verification screen is where users are asked to check their email and verify it.
+
+&nbsp;
+&nbsp;
+## WEB MEMBERSHIP LAUNCHED
+Key: ```web_membership_launched```
+Platforms: mobile
+
+This event is fired when the user is forwarded to the web product for information on membership. This could be to view a current subscription, explore products, or re-authorize a payment.
+
+&nbsp;
+&nbsp;
+## WELCOME VIEWED
+Key: ```welcome_viewed```
+Platforms: mobile, web
+
+This event is fired when the welcome screen is viewed. The welcome screen is where users can choose to join or login to the community.
 
 &nbsp;
 &nbsp;
