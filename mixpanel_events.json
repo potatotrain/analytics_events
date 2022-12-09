@@ -347,7 +347,7 @@
   "GROUP_LEFT": {
     "key": "group_left",
     "description": "This event is fired when a user leaves a group.",
-    "platforms": ["mobile"]
+    "platforms": ["mobile", "web--if-changes-are-made"]
   },
   "CHAT_ENTERED": {
     "key": "chat_entered",
@@ -481,7 +481,7 @@
   },
   "SHARE_POST": {
     "key": "share_post",
-    "description": "",
+    "description": "This event is fired when a post is shared.",
     "platforms": ["web"]
   },
   "LIKE_ATTEMPT": {
@@ -521,12 +521,12 @@
   },
   "DOWNLOAD_APP_STORE": {
     "key": "download_app_store",
-    "description": "",
+    "description": "This event is fired when a user clicks the download App Store button. This only applies to full-suite customers.",
     "platforms": ["web"]
   },
   "DOWNLOAD_PLAY_STORE": {
     "key": "download_play_store",
-    "description": "",
+    "description": "This event is fired when a user clicks the download Play Store button. This only applies to full-suite customers.",
     "platforms": ["web"]
   },
   "EMBEDDED_POST_VIEWED": {
@@ -551,16 +551,11 @@
   },
   "PROFILE_ACTIVITY_VIEWED": {
     "key": "profile_activity_viewed",
-    "description": "",
+    "description": "This event is fired when a profiles activities are viewed.",
     "platforms": ["web"]
   },
   "GROUP_JOIN_ATTEMPT": {
     "key": "group_join_attempt",
-    "description": "",
-    "platforms": ["web"]
-  },
-  "GROUP_LEAVE": {
-    "key": "group_leave",
     "description": "",
     "platforms": ["web"]
   },
@@ -576,12 +571,12 @@
   },
   "FULLSCREEN_IMAGE_VIEWED": {
     "key": "fullscreen_image_viewed",
-    "description": "",
+    "description": "This event is fired when an image posts media is viewed in full-screen mode.",
     "platforms": ["web"]
   },
   "FULLSCREEN_VIDEO_VIEWED": {
     "key": "fullscreen_video_viewed",
-    "description": "",
+    "description": "This event is fired when a video posts media is viewed in full-screen mode.",
     "platforms": ["web"]
   },
   "MESSAGES_NEW_CONVERSATION_CREATED": {
@@ -591,12 +586,12 @@
   },
   "CHAT_MESSAGE_FULLSCREEN_IMAGE_VIEWED": {
     "key": "chat_message_fullscreen_image_viewed",
-    "description": "",
+    "description": "This event is fired when a chat messages image is viewed in full-screen mode.",
     "platforms": ["web"]
   },
   "CHAT_MESSAGE_FULLSCREEN_VIDEO_VIEWED": {
     "key": "chat_message_fullscreen_video_viewed",
-    "description": "",
+    "description": "This event is fired when a chat messages video is viewed in full-screen mode.",
     "platforms": ["web"]
   },
   "EDIT_MEMBERSHIP_VIEWED": {
@@ -701,62 +696,62 @@
   },
   "INVOICE_DOWNLOADED": {
     "key": "invoice_downloaded",
-    "description": "",
+    "description": "This event is fired when an invoice is downloaded.",
     "platforms": ["web"]
   },
   "ACTIVITY_MARKED_READ": {
     "key": "activity_marked_read",
-    "description": "",
+    "description": "This event is fired when an activity is marked as read.",
     "platforms": ["web"]
   },
   "ACTIVITY_MARKED_UNREAD": {
     "key": "activity_marked_unread",
-    "description": "",
+    "description": "This event is fired when an activity is marked as un-read.",
     "platforms": ["web"]
   },
   "ACTIVITY_MARKED_HIDE": {
     "key": "activity_marked_hide",
-    "description": "",
+    "description": "This event is fired when an activity is marked to be hidden",
     "platforms": ["web"]
   },
   "ACTIVITY_REPLY_CLICKED": {
     "key": "activity_reply_clicked",
-    "description": "",
+    "description": "This event is fired when an activities quick reply feature is clicked.",
     "platforms": ["web"]
   },
   "ACTIVITY_SAY_HI_CLICKED": {
     "key": "activity_say_hi_clicked",
-    "description": "",
+    "description": "This event is fired when an activities 'Say Hi!' feature is clicked.",
     "platforms": ["web"]
   },
   "ACTIVITY_LIKE_CLICKED": {
     "key": "activity_like_clicked",
-    "description": "",
+    "description": "This event is fired when an activities like feature is clicked.",
     "platforms": ["web"]
   },
   "ACTIVITY_COMMENT_CLICKED": {
     "key": "activity_comment_clicked",
-    "description": "",
+    "description": "This event is fired when an activities reply feature is clicked.",
     "platforms": ["web"]
   },
   "ACTIVITY_FOLLOW_CLICKED": {
     "key": "activity_follow_clicked",
-    "description": "",
+    "description": "This event is fired when an activities follow feature is clicked.",
     "platforms": ["web"]
   },
   "ACTIVITIES_QUICK_PREVIEW_VIEWED": {
     "key": "activities_quick_preview_viewed",
-    "description": "",
+    "description": "This event is fired when the quick preview of activities is viewed.",
     "platforms": ["web"]
   },
   "PROMO_CODE_APPLIED": {
     "key": "promo_code_applied",
-    "description": "",
+    "description": "This event is fired when a promo code is successfully added during the checkout experience.",
     "platforms": ["web"]
   },
   "PROMO_CODE_NOT_AVAILABLE": {
     "key": "promo_code_not_available",
-    "description": "",
+    "description": "This event is fired when a promo code is not available during the checkout experience.",
     "platforms": ["web"]
   },
   "SETTINGS_OPENED": {
