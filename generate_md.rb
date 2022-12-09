@@ -12,10 +12,10 @@ File.open('mixpanel_events.md', 'w+') do |file|
   # Iterates over JSON and writes events
   json.values.sort_by! { |v| v['key'] }.each do |event|
     title     = "\#\# #{event['key'].upcase.gsub!('_', ' ')}"
-    key       = "Key: ```#{event['key']}```"
+    key       = "- Key: ```#{event['key']}```"
     platforms = "Platforms: #{event['platforms'].join(', ') }"
     desc      = "\n#{event['description']}"
 
-    file.write("#{title}\n#{key}\n#{platforms}\n#{desc}\n\n&nbsp;\n&nbsp;\n")
+    file.write("#{title}\n\n#{key}\n\n#{platforms}\n\n#{desc}\n\n&nbsp;\n&nbsp;\n")
   end
 end
