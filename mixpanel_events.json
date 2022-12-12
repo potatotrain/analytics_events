@@ -476,7 +476,7 @@
   },
   "SIGN_UP_FAILED": {
     "key": "sign_up_failed",
-    "description": "",
+    "description": "This event is fired when sign up has failed.",
     "platforms": ["web"]
   },
   "SHARE_POST": {
@@ -486,32 +486,32 @@
   },
   "LIKE_ATTEMPT": {
     "key": "like_attempt",
-    "description": "",
+    "description": "This event is fired when a post is liked and the like request is sent to the server.",
     "platforms": ["web"]
   },
   "FOLLOW_ATTEMPT": {
     "key": "follow_attempt",
-    "description": "",
+    "description": "This event is fired when a user is followed and the followed request is sent to the server.",
     "platforms": ["web"]
   },
   "COMMENT_ATTEMPT": {
     "key": "comment_attempt",
-    "description": "",
+    "description": "This event is fired when a comment is submitted and the comment request is sent to the server.",
     "platforms": ["web"]
   },
   "REPLY_ATTEMPT": {
     "key": "reply_attempt",
-    "description": "",
+    "description": "This event is fired when a reply is submitted and the reply request is sent to the server.",
     "platforms": ["web"]
   },
   "EVENT_RSVP_ATTEMPT": {
     "key": "event_rsvp_attempt",
-    "description": "",
+    "description": "This event is fired when a RSVP to an event is submitted and the RSVP request is sent to the server.",
     "platforms": ["web"]
   },
   "ADD_USER_SUBSCRIPTION_ATTEMPT": {
     "key": "add_user_subscription_attempt",
-    "description": "",
+    "description": "This event is fired when a user subscription is submitted and the user subscription request is sent to the server.",
     "platforms": ["web"]
   },
   "CREATE_AND_GO_TO_DM_ATTEMPT": {
@@ -596,7 +596,7 @@
   },
   "EDIT_MEMBERSHIP_VIEWED": {
     "key": "edit_membership_viewed",
-    "description": "",
+    "description": "This event is fired when the screen to edit membership is viewed. This applies to membership communities only.",
     "platforms": ["web"]
   },
   "PURCHASE_MEMBERSHIP_VIEWED": {
