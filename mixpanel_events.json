@@ -516,7 +516,7 @@
   },
   "CREATE_AND_GO_TO_DM_ATTEMPT": {
     "key": "create_and_go_to_dm_attempt",
-    "description": "",
+    "description": "This event is fired when an anonymous (not authenticated) user tries to dm a community member.",
     "platforms": ["web"]
   },
   "DOWNLOAD_APP_STORE": {
@@ -531,22 +531,22 @@
   },
   "EMBEDDED_POST_VIEWED": {
     "key": "embedded_post_viewed",
-    "description": "",
+    "description": "This event is fired when someone views an embedded post (typically via iframe)",
     "platforms": ["web"]
   },
   "EMBED_POST": {
     "key": "embed_post",
-    "description": "",
+    "description": "This event is fired when a user clicks the button to generate a post embed-able url",
     "platforms": ["web"]
   },
   "USER_POSTS_PAGINATE_INITIATE": {
     "key": "user_posts_paginate_initiate",
-    "description": "",
+    "description": "This event is fired when a user paginates posts on a profile.",
     "platforms": ["web"]
   },
   "USER_ACTIVITIES_PAGINATE_INITIATE": {
     "key": "user_activities_paginate_initiate",
-    "description": "",
+    "description": "This event is fired when a user paginates activities on a profile.",
     "platforms": ["web"]
   },
   "PROFILE_ACTIVITY_VIEWED": {
@@ -556,17 +556,17 @@
   },
   "GROUP_JOIN_ATTEMPT": {
     "key": "group_join_attempt",
-    "description": "",
+    "description": "This event is fired when an anonymous (not authenticated) user tries to join a group.",
     "platforms": ["web"]
   },
   "REGISTRATION_TYPE_VIEWED": {
     "key": "registration_type_viewed",
-    "description": "",
+    "description": "This event is fired when an anonymous (not authenticated) user launches the registration screen.",
     "platforms": ["web"]
   },
   "SIGN_IN_TYPE_VIEWED": {
     "key": "sign_in_type_viewed",
-    "description": "",
+    "description": "This event is fired when an anonymous (not authenticated) user launches the login screen.",
     "platforms": ["web"]
   },
   "FULLSCREEN_IMAGE_VIEWED": {
@@ -581,7 +581,7 @@
   },
   "MESSAGES_NEW_CONVERSATION_CREATED": {
     "key": "messages_new_conversation_created",
-    "description": "",
+    "description": "This event is fired when a user starts a new direct message conversation with another user.",
     "platforms": ["web"]
   },
   "CHAT_MESSAGE_FULLSCREEN_IMAGE_VIEWED": {
@@ -601,97 +601,77 @@
   },
   "PURCHASE_MEMBERSHIP_VIEWED": {
     "key": "purchase_membership_viewed",
-    "description": "",
-    "platforms": ["web"]
-  },
-  "STRIPE_CONFIRM_CARD_ERROR": {
-    "key": "stripe_confirm_card_error",
-    "description": "",
+    "description": "This event is fired when a user views the checkout screen of a product he/she does not already own.",
     "platforms": ["web"]
   },
   "PURCHASE_MEMBERSHIP_COMPLETE_VIEWED": {
     "key": "purchase_membership_complete_viewed",
-    "description": "",
+    "description": "This event is fired when a user views the receipt after purchasing a membership product.",
     "platforms": ["web"]
   },
   "NEW_PAYMENT_METHOD_VIEWED": {
     "key": "new_payment_method_viewed",
-    "description": "",
+    "description": "This event is fired when a user visits the screen to add a new payment method.",
     "platforms": ["web"]
   },
   "MEMBERSHIPS_VIEWED": {
     "key": "memberships_viewed",
-    "description": "",
+    "description": "This event is fired when a user visits the screen displaying all different membership products he/she subscribes to.",
     "platforms": ["web"]
   },
   "INVOICES_VIEWED": {
     "key": "invoices_viewed",
-    "description": "",
+    "description": "This event is fired when a user visits the screen displaying all of his/her previous invoices.",
     "platforms": ["web"]
   },
   "INVOICE_RETRY_VIEWED": {
     "key": "invoice_retry_viewed",
-    "description": "",
+    "description": "This event is fired when a user's payment failed and view the 'retry' screen.",
     "platforms": ["web"]
   },
   "PRODUCT_DETAIL_VIEWED": {
     "key": "product_detail_viewed",
-    "description": "",
+    "description": "This event is fired when a user visits the screen displaying all the details of a single subscription products.",
     "platforms": ["web"]
   },
   "PRODUCT_LIST_VIEWED": {
     "key": "product_list_viewed",
-    "description": "",
-    "platforms": ["web"]
-  },
-  "COMMUNITY_GATE_VIEWED": {
-    "key": "community_gate_viewed",
-    "description": "",
+    "description": "This event is fired when a user visits the screen displaying all different types of subscription products.",
     "platforms": ["web"]
   },
   "SUBSCRIBE_TO_BILLING_PLAN_SUCCESS": {
     "key": "subscribe_to_billing_plan_success",
-    "description": "",
+    "description": "This event is fired when a user purchases a recurring subscription product.",
     "platforms": ["web"]
   },
   "SUBSCRIBE_TO_BILLING_PLAN_FAILURE": {
     "key": "subscribe_to_billing_plan_failure",
-    "description": "",
-    "platforms": ["web"]
-  },
-  "UNSUBSCRIBE_TO_BILLING_PLAN_SUCCESS": {
-    "key": "unsubscribe_to_billing_plan_success",
-    "description": "",
+    "description": "This event is fired when a user attempts to purchase a recurring subscription product but it fails.",
     "platforms": ["web"]
   },
   "RESTORE_RECURRING_PAYMENT_SUCCESS": {
     "key": "restore_recurring_payment_success",
-    "description": "",
-    "platforms": ["web"]
-  },
-  "UNSUBSCRIBE_TO_BILLING_PLAN_FAILURE": {
-    "key": "unsubscribe_to_billing_plan_failure",
-    "description": "",
+    "description": "This event is fired when a user turns enables auto-pay on his/her subscription.",
     "platforms": ["web"]
   },
   "ADD_PAYMENT_METHOD_SUCCESS": {
     "key": "add_payment_method_success",
-    "description": "",
+    "description": "This event is fired when a user adds a new payment method.",
     "platforms": ["web"]
   },
   "ADD_PAYMENT_METHOD_FAILURE": {
     "key": "add_payment_method_failure",
-    "description": "",
+    "description": "This event is fired when a user attempts to add a new payment method but it fails",
     "platforms": ["web"]
   },
   "REMOVE_PAYMENT_METHOD_SUCCESS": {
     "key": "remove_payment_method_success",
-    "description": "",
+    "description": "This event is fired when a user removes a payment method.",
     "platforms": ["web"]
   },
   "REMOVE_PAYMENT_METHOD_FAILURE": {
     "key": "remove_payment_method_failure",
-    "description": "",
+    "description": "This event is fired when a user attempts to remove a new payment method but it fails.",
     "platforms": ["web"]
   },
   "INVOICE_DOWNLOADED": {
@@ -756,17 +736,17 @@
   },
   "SETTINGS_OPENED": {
     "key": "settings_opened",
-    "description": "",
+    "description": "This event is fired when a user opens his/her settings screen.",
     "platforms": ["web"]
   },
   "POST_CHAT_VIEWED": {
     "key": "post_chat_viewed",
-    "description": "",
+    "description": "This event is fired when a user views a live post's chat.",
     "platforms": ["web"]
   },
   "INVOICE_PAID": {
     "key": "invoice_paid",
-    "description": "",
+    "description": "This event is fired when a user manually re-pays a past due invoice.",
     "platforms": ["web"]
   }
 }
