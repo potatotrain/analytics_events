@@ -116,7 +116,7 @@ This event is fired when the activity screen is viewed.
 - Platforms: web
 
 
-
+This event is fired when a user attempts to add a new payment method but it fails
 
 &nbsp;
 &nbsp;
@@ -126,7 +126,7 @@ This event is fired when the activity screen is viewed.
 - Platforms: web
 
 
-
+This event is fired when a user adds a new payment method.
 
 &nbsp;
 &nbsp;
@@ -136,7 +136,7 @@ This event is fired when the activity screen is viewed.
 - Platforms: web
 
 
-
+This event is fired when a user subscription is submitted and the user subscription request is sent to the server.
 
 &nbsp;
 &nbsp;
@@ -296,17 +296,7 @@ This event is fired when a user reports a chat message.
 - Platforms: web
 
 
-
-
-&nbsp;
-&nbsp;
-## COMMUNITY GATE VIEWED
-
-- Key: ```community_gate_viewed```
-- Platforms: web
-
-
-
+This event is fired when a comment is submitted and the comment request is sent to the server.
 
 &nbsp;
 &nbsp;
@@ -316,7 +306,7 @@ This event is fired when a user reports a chat message.
 - Platforms: web
 
 
-
+This event is fired when an anonymous (not authenticated) user tries to dm a community member.
 
 &nbsp;
 &nbsp;
@@ -446,7 +436,7 @@ This event is fired when a user clicks the download Play Store button. This only
 - Platforms: web
 
 
-
+This event is fired when the screen to edit membership is viewed. This applies to membership communities only.
 
 &nbsp;
 &nbsp;
@@ -456,7 +446,7 @@ This event is fired when a user clicks the download Play Store button. This only
 - Platforms: web
 
 
-
+This event is fired when a user clicks the button to generate a post embed-able url
 
 &nbsp;
 &nbsp;
@@ -466,7 +456,7 @@ This event is fired when a user clicks the download Play Store button. This only
 - Platforms: web
 
 
-
+This event is fired when someone views an embedded post (typically via iframe)
 
 &nbsp;
 &nbsp;
@@ -496,7 +486,7 @@ This event is fired when a user creates or updates their RSVP to an event.
 - Platforms: web
 
 
-
+This event is fired when a RSVP to an event is submitted and the RSVP request is sent to the server.
 
 &nbsp;
 &nbsp;
@@ -546,7 +536,7 @@ This event is fired when the home feed is viewed.
 - Platforms: web
 
 
-
+This event is fired when a user is followed and the followed request is sent to the server.
 
 &nbsp;
 &nbsp;
@@ -646,7 +636,7 @@ This event is fired when a groups feed is viewed.
 - Platforms: web
 
 
-
+This event is fired when an anonymous (not authenticated) user tries to join a group.
 
 &nbsp;
 &nbsp;
@@ -756,7 +746,7 @@ This event is fired when an invoice is downloaded.
 - Platforms: web
 
 
-
+This event is fired when a user manually re-pays a past due invoice.
 
 &nbsp;
 &nbsp;
@@ -766,7 +756,7 @@ This event is fired when an invoice is downloaded.
 - Platforms: web
 
 
-
+This event is fired when a user's payment failed and view the 'retry' screen.
 
 &nbsp;
 &nbsp;
@@ -776,7 +766,7 @@ This event is fired when an invoice is downloaded.
 - Platforms: web
 
 
-
+This event is fired when a user visits the screen displaying all of his/her previous invoices.
 
 &nbsp;
 &nbsp;
@@ -786,7 +776,7 @@ This event is fired when an invoice is downloaded.
 - Platforms: web
 
 
-
+This event is fired when a post is liked and the like request is sent to the server.
 
 &nbsp;
 &nbsp;
@@ -866,7 +856,7 @@ This event is fired when a user has logged out of the community.
 - Platforms: web
 
 
-
+This event is fired when a user visits the screen displaying all different membership products he/she subscribes to.
 
 &nbsp;
 &nbsp;
@@ -876,7 +866,7 @@ This event is fired when a user has logged out of the community.
 - Platforms: web
 
 
-
+This event is fired when a user starts a new direct message conversation with another user.
 
 &nbsp;
 &nbsp;
@@ -906,7 +896,7 @@ This event is fired when the mobile notifications screen is viewed via the setti
 - Platforms: web
 
 
-
+This event is fired when a user visits the screen to add a new payment method.
 
 &nbsp;
 &nbsp;
@@ -966,7 +956,7 @@ This event is only applicable to closed communities. This event is fired when th
 - Platforms: web
 
 
-
+This event is fired when a user views a live post's chat.
 
 &nbsp;
 &nbsp;
@@ -1066,7 +1056,7 @@ This event is fired when the privacy policy screen is viewed.
 - Platforms: web
 
 
-
+This event is fired when a user visits the screen displaying all the details of a single subscription products.
 
 &nbsp;
 &nbsp;
@@ -1076,7 +1066,7 @@ This event is fired when the privacy policy screen is viewed.
 - Platforms: web
 
 
-
+This event is fired when a user visits the screen displaying all different types of subscription products.
 
 &nbsp;
 &nbsp;
@@ -1156,7 +1146,7 @@ This event is fired when a promo code is not available during the checkout exper
 - Platforms: web
 
 
-
+This event is fired when a user views the receipt after purchasing a membership product.
 
 &nbsp;
 &nbsp;
@@ -1176,7 +1166,7 @@ This event is fired when a user chooses to purchase a membership via a paywall. 
 - Platforms: web
 
 
-
+This event is fired when a user views the checkout screen of a product he/she does not already own.
 
 &nbsp;
 &nbsp;
@@ -1196,7 +1186,7 @@ This event is fired when a reaction is created on a Livestream.
 - Platforms: web
 
 
-
+This event is fired when an anonymous (not authenticated) user launches the registration screen.
 
 &nbsp;
 &nbsp;
@@ -1216,7 +1206,7 @@ This event is fired when the registration screen is viewed. The registration scr
 - Platforms: web
 
 
-
+This event is fired when a user attempts to remove a new payment method but it fails.
 
 &nbsp;
 &nbsp;
@@ -1226,7 +1216,7 @@ This event is fired when the registration screen is viewed. The registration scr
 - Platforms: web
 
 
-
+This event is fired when a user removes a payment method.
 
 &nbsp;
 &nbsp;
@@ -1236,7 +1226,7 @@ This event is fired when the registration screen is viewed. The registration scr
 - Platforms: web
 
 
-
+This event is fired when a reply is submitted and the reply request is sent to the server.
 
 &nbsp;
 &nbsp;
@@ -1256,7 +1246,7 @@ This event is fired when a user replies to a chat message.
 - Platforms: web
 
 
-
+This event is fired when a user turns enables auto-pay on his/her subscription.
 
 &nbsp;
 &nbsp;
@@ -1286,7 +1276,7 @@ This event is fired when the search screen is viewed.
 - Platforms: web
 
 
-
+This event is fired when a user opens his/her settings screen.
 
 &nbsp;
 &nbsp;
@@ -1316,7 +1306,7 @@ This event is fired when a post is shared.
 - Platforms: web
 
 
-
+This event is fired when an anonymous (not authenticated) user launches the login screen.
 
 &nbsp;
 &nbsp;
@@ -1336,7 +1326,7 @@ This event is fired when the sing in screen is viewed. The sign in screen is whe
 - Platforms: web
 
 
-
+This event is fired when sign up has failed.
 
 &nbsp;
 &nbsp;
@@ -1390,23 +1380,13 @@ This event is fired when a user chooses to start a trial via a paywall. This eve
 
 &nbsp;
 &nbsp;
-## STRIPE CONFIRM CARD ERROR
-
-- Key: ```stripe_confirm_card_error```
-- Platforms: web
-
-
-
-
-&nbsp;
-&nbsp;
 ## SUBSCRIBE TO BILLING PLAN FAILURE
 
 - Key: ```subscribe_to_billing_plan_failure```
 - Platforms: web
 
 
-
+This event is fired when a user attempts to purchase a recurring subscription product but it fails.
 
 &nbsp;
 &nbsp;
@@ -1416,7 +1396,7 @@ This event is fired when a user chooses to start a trial via a paywall. This eve
 - Platforms: web
 
 
-
+This event is fired when a user purchases a recurring subscription product.
 
 &nbsp;
 &nbsp;
@@ -1430,33 +1410,13 @@ This event is fired when the terms of service screen is viewed.
 
 &nbsp;
 &nbsp;
-## UNSUBSCRIBE TO BILLING PLAN FAILURE
-
-- Key: ```unsubscribe_to_billing_plan_failure```
-- Platforms: web
-
-
-
-
-&nbsp;
-&nbsp;
-## UNSUBSCRIBE TO BILLING PLAN SUCCESS
-
-- Key: ```unsubscribe_to_billing_plan_success```
-- Platforms: web
-
-
-
-
-&nbsp;
-&nbsp;
 ## USER ACTIVITIES PAGINATE INITIATE
 
 - Key: ```user_activities_paginate_initiate```
 - Platforms: web
 
 
-
+This event is fired when a user paginates activities on a profile.
 
 &nbsp;
 &nbsp;
@@ -1466,7 +1426,7 @@ This event is fired when the terms of service screen is viewed.
 - Platforms: web
 
 
-
+This event is fired when a user paginates posts on a profile.
 
 &nbsp;
 &nbsp;
