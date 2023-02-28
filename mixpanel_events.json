@@ -1,0 +1,752 @@
+{
+  "APP_STARTED": {
+    "key": "app_started",
+    "description": "This event is fired when the app starts.",
+    "platforms": ["mobile"]
+  },
+  "SPLASH_VIEWED": {
+    "key": "splash_viewed",
+    "description": "This event is fired when the splash screen is viewed.",
+    "platforms": ["mobile"]
+  },
+  "WELCOME_VIEWED": {
+    "key": "welcome_viewed",
+    "description": "This event is fired when the welcome screen is viewed. The welcome screen is where users can choose to join or login to the community.",
+    "platforms": ["mobile", "web"]
+  },
+  "REGISTRATION_VIEWED": {
+    "key": "registration_viewed",
+    "description": "This event is fired when the registration screen is viewed. The registration screen is where users enter their first and last name as well as their email.",
+    "platforms": ["mobile", "web"]
+  },
+  "VERIFICATION_VIEWED": {
+    "key": "verification_viewed",
+    "description": "This event is fired when the verification screen is viewed. The verification screen is where users are asked to check their email and verify it.",
+    "platforms": ["mobile", "web"]
+  },
+  "PROFILE_CREATION_VIEWED": {
+    "key": "profile_creation_viewed",
+    "description": "This event is fired when the profile creation screen is viewed. The profile creation screen is where users are asked to provide a profile picture, username, biography, and password.",
+    "platforms": ["mobile", "web"]
+  },
+  "CF_ONBOARDING_VIEWED": {
+    "key": "cf_onboarding_viewed",
+    "description": "This event is fired when the custom fields capture screen is presented during onboarding. This only happens when the community has custom fields configured that are required.",
+    "platforms": ["mobile", "web"]
+  },
+  "CF_ONBOARDING_SAVE": {
+    "key": "cf_onboarding_save",
+    "description": "This event is fired when the user saves their responses to the required custom fields during onboarding.",
+    "platforms": ["mobile", "web"]
+  },
+  "CF_ONBOARDING_OUTDATED": {
+    "key": "cf_onboarding_outdated",
+    "description": "This event is fired when the user saves their responses to the required custom fields during onboarding and the custom fields have changed. The system will reload the updated custom fields and prompt the user to refill the form.",
+    "platforms": ["mobile", "web"]
+  },
+  "PREUSER_CREATED": {
+    "key": "preuser_created",
+    "description": "This event is fired when preuser object has been successfully created on the server. The preuser object is where we store data during the onboarding process.",
+    "platforms": ["mobile", "web"]
+  },
+  "PREUSER_MIGRATED": {
+    "key": "preuser_migrated",
+    "description": "This event is fired when preuser object has been successfully migrated into a user object on the server.",
+    "platforms": ["mobile", "web"]
+  },
+  "SIGN_IN_VIEWED": {
+    "key": "sign_in_viewed",
+    "description": "This event is fired when the sing in screen is viewed. The sign in screen is where existing users can log into the community.",
+    "platforms": ["mobile", "web"]
+  },
+  "PASSWORD_FORGOT_VIEWED": {
+    "key": "password_forgot_viewed",
+    "description": "This event is fired when the forgot password screen is viewed.",
+    "platforms": ["mobile", "web"]
+  },
+  "PASSWORD_RESET_VIEWED": {
+    "key": "password_reset_viewed",
+    "description": "This event is fired when the password reset screen is viewed. This screen is shown to the user after a password reset is requested.",
+    "platforms": ["mobile", "web"]
+  },
+  "PENDING_VIEWED": {
+    "key": "pending_viewed",
+    "description": "This event is only applicable to closed communities. This event is fired when the user has completed onboarding and is now pending approval.",
+    "platforms": ["mobile", "web"]
+  },
+  "TERMS_OF_SERVICE_VIEWED": {
+    "key": "terms_of_service_viewed",
+    "description": "This event is fired when the terms of service screen is viewed.",
+    "platforms": ["mobile"]
+  },
+  "PRIVACY_POLICY_VIEWED": {
+    "key": "privacy_policy_viewed",
+    "description": "This event is fired when the privacy policy screen is viewed.",
+    "platforms": ["mobile"]
+  },
+  "DATA_POLICY_VIEWED": {
+    "key": "data_policy_viewed",
+    "description": "This event is fired when the data policy screen is viewed.",
+    "platforms": ["mobile"]
+  },
+  "SIGNED_UP": {
+    "key": "signed_up",
+    "description": "This event is fired when a user has completed onboarding and taps the enter button on the last screen of the onbaording experience.",
+    "platforms": ["mobile", "web"]
+  },
+  "LOGGED_IN": {
+    "key": "logged_in",
+    "description": "This event is fired when a user has logged into the community.",
+    "platforms": ["mobile"]
+  },
+  "LOGGED_OUT": {
+    "key": "logged_out",
+    "description": "This event is fired when a user has logged out of the community.",
+    "platforms": ["mobile", "web"]
+  },
+  "CF_RECAPTURE_VIEWED": {
+    "key": "cf_recapture_viewed",
+    "description": "This event is fired when the custom fields capture screen is viewed. This only happens when the community has custom fields configured that are required.",
+    "platforms": ["mobile", "web"]
+  },
+  "CF_RECAPTURE_SAVE": {
+    "key": "cf_recapture_save",
+    "description": "This event is fired when the user saves their responses to the required custom fields",
+    "platforms": ["mobile", "web"]
+  },
+  "CF_RECAPTURE_OUTDATED": {
+    "key": "cf_recapture_outdated",
+    "description": "This event is fired when the user saves their responses to the required custom fields and the custom fields have changed. The system will reload the updated custom fields and prompt the user to refill the form.",
+    "platforms": ["mobile", "web"]
+  },
+  "WEB_MEMBERSHIP_LAUNCHED": {
+    "key": "web_membership_launched",
+    "description": "This event is fired when the user is forwarded to the web product for information on membership. This could be to view a current subscription, explore products, or re-authorize a payment.",
+    "platforms": ["mobile"]
+  },
+  "SLIDEOUT_OPENED": {
+    "key": "slideout_opened",
+    "description": "This event is fired when the slide-out menu is opened.",
+    "platforms": ["mobile", "web"]
+  },
+  "SLIDEOUT_CLOSED": {
+    "key": "slideout_closed",
+    "description": "This event is fired when the slide-out menu is closed.",
+    "platforms": ["mobile", "web"]
+  },
+  "POST_CREATED": {
+    "key": "post_created",
+    "description": "This event is fired when a post has been successfully created on the server. The post can have any ancestry level (Root, Comment, or Reply)",
+    "platforms": ["mobile", "web"]
+  },
+  "POST_CREATE_ATTEMPT": {
+    "key": "post_create_attempt",
+    "description": "This event is fired when a request to create a post has been submitted to the server. The post can have any ancestry level (Root, Comment, or Reply)",
+    "platforms": ["mobile"]
+  },
+  "POST_DESTROYED": {
+    "key": "post_destroyed",
+    "description": "This event is fired when a post has been destroyed.",
+    "platforms": ["mobile"]
+  },
+  "POST_VIEWED": {
+    "key": "post_viewed",
+    "description": "This event is fired when the post screen is viewed.",
+    "platforms": ["mobile", "web"]
+  },
+  "POST_OWNER_FOLLOW": {
+    "key": "post_owner_follow",
+    "description": "This event is fired when a user follows the post author from the posts screen. This is only possible when navigating to a post via the discover section of the application.",
+    "platforms": ["mobile"]
+  },
+  "GIPHY_VIEWED": {
+    "key": "giphy_viewed",
+    "description": "This event is fired when a user views the gif picker when creating a media rich comment or reply.",
+    "platforms": ["mobile"]
+  },
+  "USER_VIEWED": {
+    "key": "user_viewed",
+    "description": "This event is fired when a users profile is viewed.",
+    "platforms": ["mobile", "web"]
+  },
+  "USER_TAB_VIEWED": {
+    "key": "user_tab_viewed",
+    "description": "This event is fired when a certain section of a user profile is viewed. The sections are posts, activities, and about",
+    "platforms": ["mobile"]
+  },
+  "PROFILE_EDITED": {
+    "key": "profile_edited",
+    "description": "This event is fired when the edit profile screen is viewed.",
+    "platforms": ["mobile"]
+  },
+  "PROFILE_CF_OUTDATED": {
+    "key": "profile_cf_outdated",
+    "description": "This event is fired when the user saves changes to their profile in the edit profile screen and the custom fields have changed. The system will reload the updated custom fields and prompt the user to refill the form.",
+    "platforms": ["mobile", "web"]
+  },
+  "USER_SUBSCRIPTION_CREATED": {
+    "key": "user_subscription_created",
+    "description": "This event is fired when a user subscribes/turns on post notifications for another user.",
+    "platforms": ["mobile", "web--if-changes-are-made"]
+  },
+  "USER_SUBSCRIPTION_DESTROYED": {
+    "key": "user_subscription_destroyed",
+    "description": "This event is fired when a user unsubscribes/turns off post notifications for another user.",
+    "platforms": ["mobile", "web--if-changes-are-made"]
+  },
+  "HASHTAG_VIEWED": {
+    "key": "hashtag_viewed",
+    "description": "This event is fired when the hashtags screen is viewed.",
+    "platforms": ["mobile"]
+  },
+  "FEED_VIEWED": {
+    "key": "feed_viewed",
+    "description": "This event is fired when the home feed is viewed.",
+    "platforms": ["mobile"]
+  },
+  "MESSAGES_VIEWED": {
+    "key": "messages_viewed",
+    "description": "This event is fired when the messages screen is viewed.",
+    "platforms": ["mobile", "web"]
+  },
+  "ACTIVITY_VIEWED": {
+    "key": "activity_viewed",
+    "description": "This event is fired when the activity screen is viewed.",
+    "platforms": ["mobile", "web"]
+  },
+  "ACTIVITIES_VIEWED": {
+    "key": "activities_viewed",
+    "description": "This event is fired when the activity screen is viewed.",
+    "platforms": ["mobile", "web"]
+  },
+  "DIRECT_MESSAGE_VIEWED": {
+    "key": "direct_message_viewed",
+    "description": "This event is fired when the messaging screen is viewed.",
+    "platforms": ["mobile", "web"]
+  },
+  "DIRECT_MESSAGE_ARCHIVED": {
+    "key": "direct_message_archived",
+    "description": "This event is fired when a direct messaging conversation is archived.",
+    "platforms": ["mobile", "web"]
+  },
+  "DIRECT_MESSAGE_UNARCHIVED": {
+    "key": "direct_message_unarchived",
+    "description": "This event is fired when a direct messaging conversation is un-archived.",
+    "platforms": ["mobile", "web"]
+  },
+  "DIRECT_MESSAGE_SETTINGS_VIEWED": {
+    "key": "direct_message_settings_viewed",
+    "description": "This event is fired when the settings screen for a direct message conversation is viewed.",
+    "platforms": ["mobile", "web"]
+  },
+  "DIRECT_MESSAGE_SETTINGS_OPEN": {
+    "key": "direct_message_settings_open",
+    "description": "This event is fired when the user opens the settings for a direct message conversation.",
+    "platforms": ["mobile"]
+  },
+  "DIRECT_MESSAGE_SETTINGS_CHANGED": {
+    "key": "direct_message_settings_changed",
+    "description": "This event is fired when the user changes a setting for a direct message conversation.",
+    "platforms": ["mobile", "web"]
+  },
+  "PROFILE_VIEWED": {
+    "key": "profile_viewed",
+    "description": "This event is fired when a user views their own profile via the profile tab.",
+    "platforms": ["mobile"]
+  },
+  "DISCOVER_VIEWED": {
+    "key": "discover_viewed",
+    "description": "This event is fired when a user views the discover tab.",
+    "platforms": ["mobile"]
+  },
+  "DISCOVER_TAB_VIEWED": {
+    "key": "discover_tab_viewed",
+    "description": "This event is fired when a specific page of the discover tab has been viewed. The pages can be verified, featured, trending, new, and all-time.",
+    "platforms": ["mobile"]
+  },
+  "DISCOVER_CARD_VIEWED": {
+    "key": "discover_card_viewed",
+    "description": "This event is fired when a user taps on a card in the discover tab.",
+    "platforms": ["mobile"]
+  },
+  "SETTINGS_VIEWED": {
+    "key": "settings_viewed",
+    "description": "This event is fired when the settings screen is viewed.",
+    "platforms": ["mobile"]
+  },
+  "SEARCH_VIEWED": {
+    "key": "search_viewed",
+    "description": "This event is fired when the search screen is viewed.",
+    "platforms": ["mobile"]
+  },
+  "SEARCH_PERFORMED": {
+    "key": "search_performed",
+    "description": "This event is fired when a search is performed.",
+    "platforms": ["mobile", "web"]
+  },
+  "BROWSER_VIEWED": {
+    "key": "browser_viewed",
+    "description": "This event is fired when the in app browser screen is viewed.",
+    "platforms": ["mobile"]
+  },
+  "GROUP_VIEWED": {
+    "key": "group_viewed",
+    "description": "This event is fired when a group screen is viewed.",
+    "platforms": ["mobile", "web"]
+  },
+  "GROUP_FEED_VIEWED": {
+    "key": "group_feed_viewed",
+    "description": "This event is fired when a groups feed is viewed.",
+    "platforms": ["mobile", "web"]
+  },
+  "GROUP_CHAT_VIEWED": {
+    "key": "group_chat_viewed",
+    "description": "This event is fired when a groups chat is viewed.",
+    "platforms": ["mobile"]
+  },
+  "GROUP_MEMBERS_VIEWED": {
+    "key": "group_members_viewed",
+    "description": "This event is fired when a groups member list is viewed.",
+    "platforms": ["mobile", "web"]
+  },
+  "GROUP_SETTINGS_VIEWED": {
+    "key": "group_settings_viewed",
+    "description": "This event is fired when a groups settings screen is viewed.",
+    "platforms": ["mobile", "web"]
+  },
+  "GROUP_SETTINGS_CHANGED": {
+    "key": "group_settings_changed",
+    "description": "This event is fired when a groups settings are changed.",
+    "platforms": ["mobile", "web"]
+  },
+  "GROUP_JOINED": {
+    "key": "group_joined",
+    "description": "This event is fired when a user joins a group.",
+    "platforms": ["mobile", "web--if-changes-are-made"]
+  },
+  "GROUP_FEED_CARD_VIEWED": {
+    "key": "group_feed_card_viewed",
+    "description": "This event is fired when a post is opened from the group feed.",
+    "platforms": ["mobile"]
+  },
+  "GROUP_POST_NOTIFICATIONS": {
+    "key": "group_post_notifications",
+    "description": "This event is fired when a user changes their group post notification setting.",
+    "platforms": ["mobile", "web"]
+  },
+  "GROUP_ADD_TO_HOME": {
+    "key": "group_add_to_home",
+    "description": "This event is fired when a user changes their group subscription setting.",
+    "platforms": ["mobile", "web"]
+  },
+  "GROUP_PROFILE_DISPLAY": {
+    "key": "group_profile_display",
+    "description": "This event is fired when a user changes their group display setting.",
+    "platforms": ["mobile", "web"]
+  },
+  "GROUP_LEFT": {
+    "key": "group_left",
+    "description": "This event is fired when a user leaves a group.",
+    "platforms": ["mobile", "web--if-changes-are-made"]
+  },
+  "CHAT_ENTERED": {
+    "key": "chat_entered",
+    "description": "This event is fired when a user enters a chat.",
+    "platforms": ["mobile"]
+  },
+  "CHAT_LEFT": {
+    "key": "chat_left",
+    "description": "This event is fired when a user leaves a chat.",
+    "platforms": ["mobile"]
+  },
+  "REPLY_CHAT_MESSAGE": {
+    "key": "reply_chat_message",
+    "description": "This event is fired when a user replies to a chat message.",
+    "platforms": ["mobile"]
+  },
+  "CHAT_MESSAGE_REPORTED": {
+    "key": "chat_message_reported",
+    "description": "This event is fired when a user reports a chat message.",
+    "platforms": ["mobile"]
+  },
+  "CHAT_MESSAGE_CREATED": {
+    "key": "chat_message_created",
+    "description": "This event is fired when a chat message is created.",
+    "platforms": ["mobile", "web--if-changes-are-made"]
+  },
+  "LIVE_STARTED": {
+    "key": "live_started",
+    "description": "This event is fired when a Livestream is started.",
+    "platforms": ["mobile"]
+  },
+  "LIVE_ENDED": {
+    "key": "live_ended",
+    "description": "This event is fired when a Livestream has ended.",
+    "platforms": ["mobile"]
+  },
+  "LIVE_CLOSED": {
+    "key": "live_closed",
+    "description": "This event is fired when a Livestream is closed.",
+    "platforms": ["mobile"]
+  },
+  "REACTION_CREATED": {
+    "key": "reaction_created",
+    "description": "This event is fired when a reaction is created on a Livestream.",
+    "platforms": ["mobile"]
+  },
+  "PAYWALL_VIEWED": {
+    "key": "paywall_viewed",
+    "description": "This event is fired when the paywall screen is viewed. This event applies to membership communities only.",
+    "platforms": ["mobile", "web"]
+  },
+  "START_TRIAL_OPENED": {
+    "key": "start_trial_opened",
+    "description": "This event is fired when a user chooses to start a trial via a paywall. This event applies to membership communities only.",
+    "platforms": ["mobile", "web"]
+  },
+  "PURCHASE_MEMBERSHIP_OPENED": {
+    "key": "purchase_membership_opened",
+    "description": "This event is fired when a user chooses to purchase a membership via a paywall. This event applies to membership communities only.",
+    "platforms": ["mobile", "web"]
+  },
+  "EXPLORE_OPTIONS_OPENED": {
+    "key": "explore_options_opened",
+    "description": "This event is fired when a user chooses to explore product options via a paywall. This event applies to membership communities only.",
+    "platforms": ["mobile", "web"]
+  },
+  "BLOCKS_VIEWED": {
+    "key": "blocks_viewed",
+    "description": "This event is fired when the blocks screen is viewed via the settings screen.",
+    "platforms": ["mobile"]
+  },
+  "MOBILE_NOTIFICATIONS_VIEWED": {
+    "key": "mobile_notifications_viewed",
+    "description": "This event is fired when the mobile notifications screen is viewed via the settings screen.",
+    "platforms": ["mobile"]
+  },
+  "NOTIFICATION_PERMISSION_GRANTED": {
+    "key": "notification_permission_granted",
+    "description": "This event is fired when the user grants permissions to be sent push notifications.",
+    "platforms": ["mobile"]
+  },
+  "LIKE_CREATED": {
+    "key": "like_created",
+    "description": "This event is fired when a like is created on a post.",
+    "platforms": ["mobile", "web--if-changes-are-made"]
+  },
+  "LIKE_DESTROYED": {
+    "key": "like_destroyed",
+    "description": "This event is fired when a like is removed from a post.",
+    "platforms": ["mobile", "web--if-changes-are-made"]
+  },
+  "POST_FLAGGED": {
+    "key": "post_flagged",
+    "description": "This event is fired when a post is marked as flagged by a user.",
+    "platforms": ["mobile"]
+  },
+  "FOLLOW_CREATED": {
+    "key": "follow_created",
+    "description": "This event is fired when a user follows another user.",
+    "platforms": ["mobile", "web--if-changes-are-made"]
+  },
+  "FOLLOW_DESTROYED": {
+    "key": "follow_destroyed",
+    "description": "This event is fired when a user un-follows another user.",
+    "platforms": ["mobile", "web--if-changes-are-made"]
+  },
+  "EVENT_VIEWED": {
+    "key": "event_viewed",
+    "description": "This event is fired when a user views an event.",
+    "platforms": ["mobile"]
+  },
+  "EVENTS_VIEWED": {
+    "key": "events_viewed",
+    "description": "This event is fired when the events screen is viewed.",
+    "platforms": ["mobile"]
+  },
+  "EVENT_ATTENDEE_UPSERTED": {
+    "key": "event_attendee_upserted",
+    "description": "This event is fired when a user creates or updates their RSVP to an event.",
+    "platforms": ["mobile"]
+  },
+  "EVENT_ATTENDEE_DELETED": {
+    "key": "event_attendee_deleted",
+    "description": "This event is fired when a user removes their RSVP to an event.",
+    "platforms": ["mobile"]
+  },
+  "SIGN_UP_FAILED": {
+    "key": "sign_up_failed",
+    "description": "This event is fired when sign up has failed.",
+    "platforms": ["web"]
+  },
+  "SHARE_POST": {
+    "key": "share_post",
+    "description": "This event is fired when a post is shared.",
+    "platforms": ["web"]
+  },
+  "LIKE_ATTEMPT": {
+    "key": "like_attempt",
+    "description": "This event is fired when a post is liked and the like request is sent to the server.",
+    "platforms": ["web"]
+  },
+  "FOLLOW_ATTEMPT": {
+    "key": "follow_attempt",
+    "description": "This event is fired when a user is followed and the followed request is sent to the server.",
+    "platforms": ["web"]
+  },
+  "COMMENT_ATTEMPT": {
+    "key": "comment_attempt",
+    "description": "This event is fired when a comment is submitted and the comment request is sent to the server.",
+    "platforms": ["web"]
+  },
+  "REPLY_ATTEMPT": {
+    "key": "reply_attempt",
+    "description": "This event is fired when a reply is submitted and the reply request is sent to the server.",
+    "platforms": ["web"]
+  },
+  "EVENT_RSVP_ATTEMPT": {
+    "key": "event_rsvp_attempt",
+    "description": "This event is fired when a RSVP to an event is submitted and the RSVP request is sent to the server.",
+    "platforms": ["web"]
+  },
+  "ADD_USER_SUBSCRIPTION_ATTEMPT": {
+    "key": "add_user_subscription_attempt",
+    "description": "This event is fired when a user subscription is submitted and the user subscription request is sent to the server.",
+    "platforms": ["web"]
+  },
+  "CREATE_AND_GO_TO_DM_ATTEMPT": {
+    "key": "create_and_go_to_dm_attempt",
+    "description": "This event is fired when an anonymous (not authenticated) user tries to dm a community member.",
+    "platforms": ["web"]
+  },
+  "DOWNLOAD_APP_STORE": {
+    "key": "download_app_store",
+    "description": "This event is fired when a user clicks the download App Store button. This only applies to full-suite customers.",
+    "platforms": ["web"]
+  },
+  "DOWNLOAD_PLAY_STORE": {
+    "key": "download_play_store",
+    "description": "This event is fired when a user clicks the download Play Store button. This only applies to full-suite customers.",
+    "platforms": ["web"]
+  },
+  "EMBEDDED_POST_VIEWED": {
+    "key": "embedded_post_viewed",
+    "description": "This event is fired when someone views an embedded post (typically via iframe)",
+    "platforms": ["web"]
+  },
+  "EMBED_POST": {
+    "key": "embed_post",
+    "description": "This event is fired when a user clicks the button to generate a post embed-able url",
+    "platforms": ["web"]
+  },
+  "USER_POSTS_PAGINATE_INITIATE": {
+    "key": "user_posts_paginate_initiate",
+    "description": "This event is fired when a user paginates posts on a profile.",
+    "platforms": ["web"]
+  },
+  "USER_ACTIVITIES_PAGINATE_INITIATE": {
+    "key": "user_activities_paginate_initiate",
+    "description": "This event is fired when a user paginates activities on a profile.",
+    "platforms": ["web"]
+  },
+  "PROFILE_ACTIVITY_VIEWED": {
+    "key": "profile_activity_viewed",
+    "description": "This event is fired when a profiles activities are viewed.",
+    "platforms": ["web"]
+  },
+  "GROUP_JOIN_ATTEMPT": {
+    "key": "group_join_attempt",
+    "description": "This event is fired when an anonymous (not authenticated) user tries to join a group.",
+    "platforms": ["web"]
+  },
+  "REGISTRATION_TYPE_VIEWED": {
+    "key": "registration_type_viewed",
+    "description": "This event is fired when an anonymous (not authenticated) user launches the registration screen.",
+    "platforms": ["web"]
+  },
+  "SIGN_IN_TYPE_VIEWED": {
+    "key": "sign_in_type_viewed",
+    "description": "This event is fired when an anonymous (not authenticated) user launches the login screen.",
+    "platforms": ["web"]
+  },
+  "FULLSCREEN_IMAGE_VIEWED": {
+    "key": "fullscreen_image_viewed",
+    "description": "This event is fired when an image posts media is viewed in full-screen mode.",
+    "platforms": ["web"]
+  },
+  "FULLSCREEN_VIDEO_VIEWED": {
+    "key": "fullscreen_video_viewed",
+    "description": "This event is fired when a video posts media is viewed in full-screen mode.",
+    "platforms": ["web"]
+  },
+  "MESSAGES_NEW_CONVERSATION_CREATED": {
+    "key": "messages_new_conversation_created",
+    "description": "This event is fired when a user starts a new direct message conversation with another user.",
+    "platforms": ["web"]
+  },
+  "CHAT_MESSAGE_FULLSCREEN_IMAGE_VIEWED": {
+    "key": "chat_message_fullscreen_image_viewed",
+    "description": "This event is fired when a chat messages image is viewed in full-screen mode.",
+    "platforms": ["web"]
+  },
+  "CHAT_MESSAGE_FULLSCREEN_VIDEO_VIEWED": {
+    "key": "chat_message_fullscreen_video_viewed",
+    "description": "This event is fired when a chat messages video is viewed in full-screen mode.",
+    "platforms": ["web"]
+  },
+  "EDIT_MEMBERSHIP_VIEWED": {
+    "key": "edit_membership_viewed",
+    "description": "This event is fired when the screen to edit membership is viewed. This applies to membership communities only.",
+    "platforms": ["web"]
+  },
+  "PURCHASE_MEMBERSHIP_VIEWED": {
+    "key": "purchase_membership_viewed",
+    "description": "This event is fired when a user views the checkout screen of a product he/she does not already own.",
+    "platforms": ["web"]
+  },
+  "PURCHASE_MEMBERSHIP_COMPLETE_VIEWED": {
+    "key": "purchase_membership_complete_viewed",
+    "description": "This event is fired when a user views the receipt after purchasing a membership product.",
+    "platforms": ["web"]
+  },
+  "NEW_PAYMENT_METHOD_VIEWED": {
+    "key": "new_payment_method_viewed",
+    "description": "This event is fired when a user visits the screen to add a new payment method.",
+    "platforms": ["web"]
+  },
+  "MEMBERSHIPS_VIEWED": {
+    "key": "memberships_viewed",
+    "description": "This event is fired when a user visits the screen displaying all different membership products he/she subscribes to.",
+    "platforms": ["web"]
+  },
+  "INVOICES_VIEWED": {
+    "key": "invoices_viewed",
+    "description": "This event is fired when a user visits the screen displaying all of his/her previous invoices.",
+    "platforms": ["web"]
+  },
+  "INVOICE_RETRY_VIEWED": {
+    "key": "invoice_retry_viewed",
+    "description": "This event is fired when a user's payment failed and view the 'retry' screen.",
+    "platforms": ["web"]
+  },
+  "PRODUCT_DETAIL_VIEWED": {
+    "key": "product_detail_viewed",
+    "description": "This event is fired when a user visits the screen displaying all the details of a single subscription products.",
+    "platforms": ["web"]
+  },
+  "PRODUCT_LIST_VIEWED": {
+    "key": "product_list_viewed",
+    "description": "This event is fired when a user visits the screen displaying all different types of subscription products.",
+    "platforms": ["web"]
+  },
+  "SUBSCRIBE_TO_BILLING_PLAN_SUCCESS": {
+    "key": "subscribe_to_billing_plan_success",
+    "description": "This event is fired when a user purchases a recurring subscription product.",
+    "platforms": ["web"]
+  },
+  "SUBSCRIBE_TO_BILLING_PLAN_FAILURE": {
+    "key": "subscribe_to_billing_plan_failure",
+    "description": "This event is fired when a user attempts to purchase a recurring subscription product but it fails.",
+    "platforms": ["web"]
+  },
+  "RESTORE_RECURRING_PAYMENT_SUCCESS": {
+    "key": "restore_recurring_payment_success",
+    "description": "This event is fired when a user turns enables auto-pay on his/her subscription.",
+    "platforms": ["web"]
+  },
+  "ADD_PAYMENT_METHOD_SUCCESS": {
+    "key": "add_payment_method_success",
+    "description": "This event is fired when a user adds a new payment method.",
+    "platforms": ["web"]
+  },
+  "ADD_PAYMENT_METHOD_FAILURE": {
+    "key": "add_payment_method_failure",
+    "description": "This event is fired when a user attempts to add a new payment method but it fails",
+    "platforms": ["web"]
+  },
+  "REMOVE_PAYMENT_METHOD_SUCCESS": {
+    "key": "remove_payment_method_success",
+    "description": "This event is fired when a user removes a payment method.",
+    "platforms": ["web"]
+  },
+  "REMOVE_PAYMENT_METHOD_FAILURE": {
+    "key": "remove_payment_method_failure",
+    "description": "This event is fired when a user attempts to remove a new payment method but it fails.",
+    "platforms": ["web"]
+  },
+  "INVOICE_DOWNLOADED": {
+    "key": "invoice_downloaded",
+    "description": "This event is fired when an invoice is downloaded.",
+    "platforms": ["web"]
+  },
+  "ACTIVITY_MARKED_READ": {
+    "key": "activity_marked_read",
+    "description": "This event is fired when an activity is marked as read.",
+    "platforms": ["web"]
+  },
+  "ACTIVITY_MARKED_UNREAD": {
+    "key": "activity_marked_unread",
+    "description": "This event is fired when an activity is marked as un-read.",
+    "platforms": ["web"]
+  },
+  "ACTIVITY_MARKED_HIDE": {
+    "key": "activity_marked_hide",
+    "description": "This event is fired when an activity is marked to be hidden",
+    "platforms": ["web"]
+  },
+  "ACTIVITY_REPLY_CLICKED": {
+    "key": "activity_reply_clicked",
+    "description": "This event is fired when an activities quick reply feature is clicked.",
+    "platforms": ["web"]
+  },
+  "ACTIVITY_SAY_HI_CLICKED": {
+    "key": "activity_say_hi_clicked",
+    "description": "This event is fired when an activities 'Say Hi!' feature is clicked.",
+    "platforms": ["web"]
+  },
+  "ACTIVITY_LIKE_CLICKED": {
+    "key": "activity_like_clicked",
+    "description": "This event is fired when an activities like feature is clicked.",
+    "platforms": ["web"]
+  },
+  "ACTIVITY_COMMENT_CLICKED": {
+    "key": "activity_comment_clicked",
+    "description": "This event is fired when an activities reply feature is clicked.",
+    "platforms": ["web"]
+  },
+  "ACTIVITY_FOLLOW_CLICKED": {
+    "key": "activity_follow_clicked",
+    "description": "This event is fired when an activities follow feature is clicked.",
+    "platforms": ["web"]
+  },
+  "ACTIVITIES_QUICK_PREVIEW_VIEWED": {
+    "key": "activities_quick_preview_viewed",
+    "description": "This event is fired when the quick preview of activities is viewed.",
+    "platforms": ["web"]
+  },
+  "PROMO_CODE_APPLIED": {
+    "key": "promo_code_applied",
+    "description": "This event is fired when a promo code is successfully added during the checkout experience.",
+    "platforms": ["web"]
+  },
+  "PROMO_CODE_NOT_AVAILABLE": {
+    "key": "promo_code_not_available",
+    "description": "This event is fired when a promo code is not available during the checkout experience.",
+    "platforms": ["web"]
+  },
+  "SETTINGS_OPENED": {
+    "key": "settings_opened",
+    "description": "This event is fired when a user opens his/her settings screen.",
+    "platforms": ["web"]
+  },
+  "POST_CHAT_VIEWED": {
+    "key": "post_chat_viewed",
+    "description": "This event is fired when a user views a live post's chat.",
+    "platforms": ["web"]
+  },
+  "INVOICE_PAID": {
+    "key": "invoice_paid",
+    "description": "This event is fired when a user manually re-pays a past due invoice.",
+    "platforms": ["web"]
+  }
+}

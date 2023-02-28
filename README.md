@@ -1,4 +1,4 @@
-# Explanation
+# Analytics Events
 
 These are definitions of the analytic events used by our internal analytics solution. The structure of an event is as follows:
 
@@ -16,4 +16,8 @@ These are definitions of the analytic events used by our internal analytics solu
 }
 
 ```
+
+# Mixpanel Events
+
+To generate the mixpanel_events.md file run the `generate_md.rb` ruby script.
 
